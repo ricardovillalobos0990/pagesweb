@@ -24,23 +24,21 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-
+/* Texto y letra predeterminado */
 body { 
 	text-align: center; font: 300 20px/1.5 'Roboto Condensed';
 }
-
+/* Transiccion de enlaces navegacion */
 html {
 	scroll-behavior: smooth;
   }
-
+/* Imagen cabecera al 100% */
 .header { 
 	height: 100vh; width: 100%; background: url(../images/fondo.jpeg) no-repeat center top; background-size: cover;
 	background-attachment: fixed;
 }
-
-
+/* Formato etiquetas p */
 p {
-	
 	text-align: center; font: 300 20px/1.5 'Roboto Mono', monospace';
 }
 
@@ -51,7 +49,7 @@ h3 {
 ul {
 	list-style: none;
 }
-
+/* Navegacion Principal */
 .nav-principal ul {
 	float: right;
 }
@@ -95,7 +93,7 @@ ul {
 	color: #000000;
 }
 
-
+/* Profile */
 .content-profile {
 	background: url(../images/dummy-header.jpg);
 	float: left;
@@ -111,21 +109,50 @@ ul {
 	color: #000000;
 	padding-top: 25px;
 	margin-left: 111px;
-	margin-right: 111px;	
+	margin-right: 111px;
 }
 
+/* Competencias */
+.competitions {
+	width: 100%;
+	height: 100vh;
+}
 
+.competitions p {
+	text-align: left;
+	margin-bottom: 20px;
+	margin-right: 80px;
+	margin-left: 80px;
+}
+
+.competitions h3 {
+	padding: 0 0 10px 0;
+}
+
+.comp-div-img {
+	float: left;
+	width: 30%;
+}
+
+.comp-div-des {
+	float: left;
+	width: 70%;
+}
+
+/*
+Configuracion de 50% para las 4 secciones de 1/4
+*/
 .quarter {
+	display: block;
 	width: 50%;
 	float: left;
 	text-align: center;
-	box-sizing: border-box;
 }
 
 .quarter p {
 	margin: 4%;
 }
-
+/* Iconos de la experiencia */
 .icon-wrap {
 	margin: 0 auto;
 	width: 130px;
@@ -143,21 +170,9 @@ ul {
 	padding: 20%;
 }
 
-/* SLIDER */
-.slider{
-	margin: auto;
-	width: 100%;
-	overflow: hidden;
-}
+/* SLIDER TITULACIONES */
 
-.slider ul {
-	display: flex;
-	padding: 0%;
-	width: 400%;
-	animation: cambio 20s infinite alternate linear;
-}
-
-
+/* FOOTER */
 .icon-text {
 	width: 100%;
 	margin: auto;
