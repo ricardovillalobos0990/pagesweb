@@ -49,6 +49,12 @@ h3 {
 ul {
 	list-style: none;
 }
+
+h1 {
+	font-size: 50px;
+	color: white;
+	padding: 15% 5% 5% 0;
+}
 /* Navegacion Principal */
 .nav-principal ul {
 	float: right;
@@ -78,13 +84,6 @@ ul {
 .nav-principal span {
 	margin-right: 9px;
 	font-size: 19px;
-}
-
-.header h1 {
-	padding-top: 20%;
-	margin-left: 20%;
-	margin-right: 20%;
-	color: white;
 }
 
 .title {
@@ -170,7 +169,7 @@ Configuracion de 50% para las 4 secciones de 1/4
 	padding: 20%;
 }
 
-/* SLIDER TITULACIONES */
+/* SLIDER Titulacio */
 
 /* FOOTER */
 .icon-text {
@@ -180,7 +179,8 @@ Configuracion de 50% para las 4 secciones de 1/4
 
 .icon-text-icon {
 	width: 100%;
-	padding-top: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .icon-text-icon li {
@@ -215,10 +215,9 @@ footer {
 }
 
 .footer-nav a {
-	font-size: 100%;
 	color: #ffffff;
-	font-weight: 300;
 	text-decoration: none;
+	font-size: 80%;
 }
 
 .footer-nav a:hover {
@@ -231,9 +230,39 @@ footer {
 }
 
 .social i {
-	font-size: 100%;
 	margin: 1%;
 	padding: auto;
 	color: #ffffff;
 	justify-content: center	;
+}
+
+/* SLIDER HEADER */
+.slider-header {
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+
+}
+
+.slider-header ul {
+	display: flex;
+	padding: 0%;
+	width: 300%;
+	animation: cambio 20s infinite alternate;
+	animation-timing-function: ease-in-out;
+}
+
+.slider-header li {
+	width: 100%;
+}
+
+@keyframes cambio {
+	0% { margin-left: 0%;}
+	25% { margin-left: 0%;}
+
+	35% {margin-left: -100%;}
+	60% {margin-left: -100%;}
+
+	70%	{margin-left: -200%;}
+	100% {margin-left: -200%;}
 }
