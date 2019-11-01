@@ -42,19 +42,16 @@ p {
 	text-align: center; font: 300 20px/1.5 'Roboto Mono', monospace';
 }
 
-h3 {
-	color: #6991ac;
-}
-
-ul {
-	list-style: none;
-}
-
 h1 {
 	font-size: 50px;
 	color: white;
 	padding: 15% 5% 5% 0;
 }
+
+h3 {
+	color: #6991ac;
+}
+
 /* Navegacion Principal */
 .nav-principal ul {
 	float: right;
@@ -63,18 +60,15 @@ h1 {
 .nav-principal li {
 	list-style: none;
 	display: inline-block;
-	text-align: right;
-	justify-content: right;
 }
 
 .nav-principal li a {
 	display: block;
 	color: white;	
 	text-align: center;
-	font-size: 17px;
-	padding: 30px 20px;
+	font-size: 20px;
+	padding: 40px 25px;
 	text-decoration: none;
-	list-style: none;
 }
 
 .nav-principal a:hover {
@@ -83,22 +77,28 @@ h1 {
 
 .nav-principal span {
 	margin-right: 9px;
-	font-size: 19px;
+	font-size: 25px;
 }
 
-.title {
+.subtitle {
 	padding: 2%;
 	font-size: 50px;
 	color: #000000;
 }
 
+.subtitle3 {
+	padding-bottom: 5%;
+	font-size: 25px;
+	color: #000000;
+}
+
 /* Profile */
 .content-profile {
+	display: block;
 	background: url(../images/dummy-header.jpg);
 	float: left;
 	width: 100%;
 	height: 100%;
-	margin-bottom: 30px;
 	background-repeat: no-repeat; /*No se repetira*/
 	background-size: cover; /* Imagen al 100% de ancho */
 	background-attachment: fixed; /* Posicion fija para la imagen */
@@ -106,40 +106,38 @@ h1 {
 
 .content-profile p {
 	color: #000000;
-	padding-top: 25px;
 	margin-left: 111px;
 	margin-right: 111px;
 }
 
-/* Competencias */
-.competitions {
-	width: 100%;
-	height: 100vh;
-}
-
-.competitions p {
-	text-align: left;
-	margin-bottom: 20px;
-	margin-right: 80px;
-	margin-left: 80px;
-}
-
-.competitions h3 {
-	padding: 0 0 10px 0;
-}
-
-.comp-div-img {
+/* Competencias IMG*/
+.competitions-img {
 	float: left;
-	width: 30%;
+	width: 40%;
+	height: 700px;
 }
 
-.comp-div-des {
+/* Competencias TEXT*/
+.competitions-text {
 	float: left;
-	width: 70%;
+	width: 60%;
+	display: block;
+	padding: 0;
+	height: 700px;
 }
 
+.competitions-text ul {
+	list-style: none;
+	padding: 20px 20px 0 20px;
+}
+
+.competitions-text h3 {
+	padding: 3%;
+	font-size: 25px;
+	color: #6991ac;
+}
 /*
-Configuracion de 50% para las 4 secciones de 1/4
+Configuracion de 50% para las 4 secciones de 1/2
 */
 .quarter {
 	display: block;
@@ -224,6 +222,11 @@ footer {
 	color: #6e5656;
 }
 
+.second-footer{
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
 .second-footer a {
 	color: #ffffff;
 	text-decoration: none;
@@ -231,7 +234,7 @@ footer {
 
 .social i {
 	margin: 1%;
-	padding: auto;
+	padding: 20px;
 	color: #ffffff;
 	justify-content: center	;
 }
