@@ -17,6 +17,7 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
+	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -39,7 +40,7 @@ html {
 }
 /* Formato etiquetas p */
 p {
-	text-align: center; font: 300 20px/1.5 'Roboto Mono', monospace';
+	text-align: center; font: 300 16px/1.5 'Roboto Mono', monospace';
 }
 
 h1 {
@@ -77,34 +78,30 @@ h3 {
 
 .nav-principal span {
 	margin-right: 9px;
-	font-size: 25px;
+	font-size: 24px;
 }
-
+/* SUBTITLE */
 .subtitle {
-	padding: 2%;
 	font-size: 50px;
 	color: #000000;
 }
 
 .subtitle3 {
 	padding-bottom: 5%;
-	font-size: 25px;
+	font-size: 24px;
 	color: #000000;
 }
-
 /* Profile */
 .content-profile {
-	display: block;
 	background: url(../images/dummy-header.jpg);
-	float: left;
 	width: 100%;
-	height: 100%;
-	background-repeat: no-repeat; /*No se repetira*/
-	background-size: cover; /* Imagen al 100% de ancho */
-	background-attachment: fixed; /* Posicion fija para la imagen */
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 .content-profile p {
+	text-align: left;
 	color: #000000;
 	margin-left: 111px;
 	margin-right: 111px;
@@ -147,17 +144,21 @@ Configuracion de 50% para las 4 secciones de 1/2
 }
 
 .quarter p {
-	margin: 4%;
+	margin: 2% 9% 5% 9%;
+	text-align: left;
 }
+
+
 /* Iconos de la experiencia */
 .icon-wrap {
-	margin: 0 auto;
+	margin: auto;
 	width: 130px;
 	height: 130px;
-	background-color: rgba(59, 186, 213, 0.8);
+	background: rgba(59, 186, 213, 0.8);
 	border-radius: 15px;
-	margin-top: 3%;
 	text-align: center;
+	box-shadow: 0 25px 7px -15px rgba(0, 0, 0, .5);
+	margin-bottom: 3%;
 }
 
 .icon-wrap i {
@@ -190,7 +191,7 @@ Configuracion de 50% para las 4 secciones de 1/2
 	width: 100%;
 	float: left;
 	padding-top: 5px;
-	border-top: 1px solid rgba(255, 255, 255, 0.2);
+	border-top: 1px dotted rgba(255, 255, 255, 0.2);
 }
 
 .icon-text-text li {
@@ -257,6 +258,8 @@ footer {
 
 .slider-header li {
 	width: 100%;
+	text-decoration: none;
+	list-style: none;
 }
 
 @keyframes cambio {
