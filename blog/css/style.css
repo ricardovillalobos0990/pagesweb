@@ -57,11 +57,11 @@ h3 {
 /* Navegacion Principal */
 
 .nav-principal ul {
-	display: block;
 	background-color: rgba(10, 10, 10);
+	/* opacity: 0.999; */
 	display: flex;
-	width: 100%;
 	justify-content: center;
+	overflow: hidden;
 }
 
 .nav-principal li {
@@ -81,7 +81,6 @@ h3 {
 	display: block;
 	color: white;
 	text-align: center;
-	font-size: 20px;
 	padding: 40px 25px;
 	text-decoration: none;
 }
@@ -144,6 +143,8 @@ Imagen Header al 100%
 	background: url(../images/fondo.jpeg);
 	background-repeat: no-repeat center top;
 	background-size: cover;
+	box-shadow: -100px -100px 100px inset rgba(0, 0, 0, 0.9),
+				 100px 100px 100px inset rgba(0, 0, 0, 0.9);
 	/* background-attachment: fixed; */
 }
 
