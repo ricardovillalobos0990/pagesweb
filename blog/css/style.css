@@ -50,7 +50,6 @@ h1 {
 }
 
 h3 {
-	color: #6991ac;
 	padding: 3%;
 	font-size: 25px;
 }
@@ -87,8 +86,34 @@ h3 {
 	text-decoration: none;
 }
 
-.nav-principal li a:hover {
-	color: #6991ac;
+.nav-principal:hover>ul>li:nth-child(1) i {
+	color: #f44336
+}
+
+.nav-principal:hover>ul>li:nth-child(2) i {
+	color: #03a9f4
+}
+
+.nav-principal:hover>ul>li:nth-child(3) i {
+	color: #ff8a00
+}
+
+.nav-principal:hover>ul>li:nth-child(4) i {
+	color: #4caf50
+}
+
+.nav-principal:hover>ul>li:nth-child(5) i {
+	color: #9c27b0
+}
+
+.nav-principal:hover>ul>li:nth-child(6) i {
+	color: #cf8a00
+}
+
+.header .nav-principal .main-sections>li>a>i {
+	-webkit-transition: .25s;
+	transition: .25s;
+	fill: none;
 }
 
 .nav-principal span {
@@ -148,8 +173,8 @@ Imagen Header al 100%
 .content-profile p {
 	text-align: left;
 	color: #000000;
-	margin-left: 111px;
-	margin-right: 111px;
+	margin-left: 200px;
+	margin-right: 200px;
 }
 
 /* Competencias IMG*/
