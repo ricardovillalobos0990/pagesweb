@@ -21,10 +21,14 @@
                             "experience         experience              experience";
 }
 
-.site-footer {
+.footer-site {
     display: grid;
-    grid-template-columns: 1 1fr;
-    grid-template-rows: 2 auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    background: rgb(138, 124, 124);
+    grid-template-areas:    "footer-text"
+                            "footer-icons"
+                            "footer-rights" ;
 }
 
 .profile-wrapper .cont-img {
@@ -67,4 +71,22 @@
     display: flex;
     justify-content: center;
     grid-area: experience;
+}
+
+.footer-site .footer-text {
+    display: flex;
+    justify-content: center;
+    grid-area: footer-text;
+}
+
+.footer-site .footer-icons {
+    display: flex;
+    justify-content: center;
+    grid-area: footer-icons;
+}
+
+.footer-site .footer-rights {
+    display: flex;
+    justify-content: center;
+    grid-area: footer-rights;
 }

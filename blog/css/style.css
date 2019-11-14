@@ -193,7 +193,8 @@ Imagen Header al 100%
     background: url(../images/fondo.jpeg);
     background-repeat: no-repeat center top;
     background-size: cover;
-    box-shadow: -100px -100px 100px inset rgba(0, 0, 0, 0.9), 100px 100px 100px inset rgba(0, 0, 0, 0.9);
+    box-shadow: -100px -100px 100px inset rgba(0, 0, 0, 0.9),
+     100px 100px 100px inset rgba(0, 0, 0, 0.9);
 }
 
 /* SUBTITLE */
@@ -247,11 +248,6 @@ Imagen Header al 100%
 
 /*  Competencias IMG*/
 
-.competitions-1 {
-    background-color: #ffffff;
-    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
-}
-
 .competitions-1 .competitions1-content {
     justify-items: center;
 }
@@ -276,34 +272,45 @@ Imagen Header al 100%
 
 /*
 Configuracion de 50% para las 2 secciones 1/2
+quitamos el grid que ocupa el 100% y lo utlizamos con un block del 50%
+Pendiente de anidar una grid
 */
 
-.quarter {
+.experience-half {
     display: block;
     width: 50%;
     float: left;
     text-align: center;
 }
 
-.quarter p {
+.experience-half p {
     margin: 0 10%;
     text-align: left;
 }
 
+.experience h2 {
+    font-size: 4rem;
+}
+
+.experience h3 {
+    font-size: 2rem;
+}
+
+
 /* Iconos de la experiencia */
 
-.icon-wrap {
+.experience-icon-wrap {
     margin: auto;
     width: 130px;
     height: 130px;
-    background: rgba(59, 186, 213, 0.8);
+    background-image: linear-gradient(to top left, rgb(0, 255, 255) 60%, rgb(211, 254, 255) 100%);
     border-radius: 15px;
     text-align: center;
     box-shadow: 0 25px 7px -15px rgba(0, 0, 0, .5);
     margin-bottom: 3%;
 }
 
-.icon-wrap i {
+.experience-icon-wrap i {
     text-align: center;
     color: #ffffff;
     font-size: 350%;
@@ -312,23 +319,16 @@ Configuracion de 50% para las 2 secciones 1/2
 
 /*FOOTER */
 
-.icon-text {
-	width: 100%;
-	margin: auto;
-}
-
-.icon-text-icon {
-	width: 100%;
+/* .icon-text-icon {
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
 
 .icon-text-icon li {
-	display: inline-block;
-	margin-right: 30px;
-}
+	padding: 5%;
+} */
 
-.icon-text-text {
+/* .icon-text-text {
 	width: 100%;
 	float: left;
 	padding-top: 5px;
@@ -386,4 +386,4 @@ footer {
 	padding: 20px;
 	color: #ffffff;
 	justify-content: center;
-}
+} */
