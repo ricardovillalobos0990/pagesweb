@@ -12,7 +12,7 @@
 .profile-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(6, auto);
+    grid-template-rows: repeat(-1, auto);
     grid-template-areas:    "cont-image         cont-image              cont-image"
                             "all-adds           profile-professional    profile-professional"
                             "all-adds           profile-behavioral      profile-behavioral"
@@ -24,8 +24,8 @@
 .footer-site {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, auto);
-    background: rgb(138, 124, 124);
+    grid-template-rows: repeat(3, 100px);
+    background: rgb(0, 0, 0);
     grid-template-areas:    "footer-text"
                             "footer-icons"
                             "footer-rights" ;
