@@ -4,6 +4,10 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+:root {
+    --padding-grid: 20px;
+    --max-width: 1284px;
+}
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     box-sizing: border-box;
@@ -46,20 +50,14 @@ p {
 
 h1 {
     position: relative;
-    font-size: 50px;
+    font-size: 3em;
     color: rgba(255, 255, 255, 0.7);
-}
-
-h3 {
-    padding: 3%;
-    font-size: 25px;
 }
 
 /* Navegacion Principal */
 
 .nav-main ul {
     background-color: rgba(10, 10, 10);
-    /* opacity: 0.999; */
     display: flex;
     justify-content: center;
     overflow: hidden;
@@ -89,7 +87,7 @@ h3 {
 .nav-main:hover li a {
     padding: 20px 25px;
     transition: .5s;
-    font-size: 25px;
+    font-size: 1.3em;
 }
 
 .nav-main:hover>ul>li:nth-child(1) i {
@@ -124,7 +122,7 @@ h3 {
 
 .nav-main span {
     display: block;
-    font-size: 20px;
+    font-size: 1.5rem;
 }
 
 .nav-main::after {
@@ -210,9 +208,8 @@ Imagen Header al 100%
 /* profile professional */
 
 .subtitle-professional {
-    font-size: 50px;
-    color: #000000;
     padding-right: 50px;
+    font-size: 2.5em;
 }
 
 .content-professional {
@@ -231,8 +228,7 @@ Imagen Header al 100%
 /* Profile behavioral*/
 
 .subtitle-behavioral {
-    font-size: 50px;
-    color: #000000;
+    font-size: 2.5em;
     padding-right: 50px;
 }
 
@@ -248,15 +244,20 @@ Imagen Header al 100%
     text-align: left;
     padding-right: 50px;
 }
-/*  */
+
+/*  Competencias IMG*/
+
 .competitions-1 {
     background-color: #ffffff;
-    font-size: 50px;
     grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
 }
 
 .competitions-1 .competitions1-content {
     justify-items: center;
+}
+
+.competitions1-subtitle {
+    font-size: 2.5em;
 }
 
 /* Competencias TEXT*/
@@ -267,6 +268,10 @@ Imagen Header al 100%
 
 .competitions-2-analysis {
     padding-top: 0;
+}
+
+.competitions-2 h2 {
+    font-size: 2.5em;
 }
 
 /*
@@ -305,7 +310,7 @@ Configuracion de 50% para las 2 secciones 1/2
     padding: 20%;
 }
 
-* FOOTER */
+/*FOOTER */
 
 .icon-text {
 	width: 100%;
