@@ -1,0 +1,70 @@
+:root {
+    --padding-grid: 20px;
+    --max-width: 1284px;
+}
+
+.site-header {
+    display: grid;
+    grid-template-columns: 1 1fr;
+    grid-gap: var(--padding-grid);
+}
+
+.profile-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:    "cont-image         cont-image              cont-image"
+                            "all-adds           profile-professional    profile-professional"
+                            "all-adds           profile-behavioral      profile-behavioral"
+                            "competitions-1     competitions-2          competitions-2"
+                            "competitions-1     competitions-2          competitions-2"
+                            "experience         experience              experience";
+}
+
+.site-footer {
+    display: grid;
+    grid-template-columns: 1 1fr;
+    grid-template-rows: 2 auto;
+}
+
+.profile-wrapper .cont-img {
+    display: flex;
+    justify-content: center;
+    grid-area: cont-image;
+}
+
+.profile-wrapper .all-adds {
+    background-image: linear-gradient(to bottom right,hsla(199, 62%, 41%, 0.70) -300%, hsla(360, 100%, 100%, 1) 60%);
+    display: flex;
+    justify-content: center;
+    grid-area: all-adds;
+}
+
+.profile-wrapper .profile-professional {
+    display: flex;
+    grid-area: profile-professional;
+}
+
+.profile-wrapper .profile-behavioral {
+    display: flex;
+    justify-content: center;
+    grid-area: profile-behavioral;
+}
+
+.profile-wrapper .competitions-1 {
+    display: flex;
+    justify-content: center;
+    grid-area: competitions-1;
+}
+
+.profile-wrapper .competitions-2 {
+    display: flex;
+    justify-content: center;
+    grid-area: competitions-2;
+}
+
+.profile-wrapper .experience {
+    display: flex;
+    justify-content: center;
+    grid-area: experience;
+}
