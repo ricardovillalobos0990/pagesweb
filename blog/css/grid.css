@@ -11,14 +11,14 @@
 
 .profile-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(-1, auto);
-    grid-template-areas:    "cont-image         cont-image              cont-image"
-                            "all-adds           profile-professional    profile-professional"
-                            "all-adds           profile-behavioral      profile-behavioral"
-                            "competitions-1     competitions-2          competitions-2"
-                            "competitions-1     competitions-2          competitions-2"
-                            "experience         experience              experience";
+    grid-template-areas:    "cont-image             cont-image"
+                            "profile-professional   profile-professional"
+                            "profile-behavioral     profile-behavioral"
+                            "competitions-1         competitions-2"
+                            "experience-1           experience-2"
+                            "qualifications         qualifications";
 }
 
 .footer-site {
@@ -35,13 +35,6 @@
     display: flex;
     justify-content: center;
     grid-area: cont-image;
-}
-
-.profile-wrapper .all-adds {
-    background-image: linear-gradient(to bottom right,hsla(199, 62%, 41%, 0.70) -300%, hsla(360, 100%, 100%, 1) 60%);
-    display: flex;
-    justify-content: center;
-    grid-area: all-adds;
 }
 
 .profile-wrapper .profile-professional {
@@ -67,10 +60,22 @@
     grid-area: competitions-2;
 }
 
-.profile-wrapper .experience {
+.profile-wrapper .experience-1 {
+    display: block;
+    justify-content: center;
+    grid-area: experience-1;
+}
+
+.profile-wrapper .experience-2 {
+    display: block;
+    justify-content: center;
+    grid-area: experience-2;
+}
+
+.profile-wrapper .qualifications {
     display: flex;
     justify-content: center;
-    grid-area: experience;
+    grid-area: qualifications;
 }
 
 .footer-site .footer-text {

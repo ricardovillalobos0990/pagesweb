@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="../blog/css/grid.css">
     <link rel="stylesheet" href="../blog/css/style.css">
     <title>Blog Personal</title>
@@ -27,19 +28,19 @@
                     </a>
                 </li>
                 <li class="profile">
-                    <a href="#profile">
+                    <a href="#profile-professional">
                         <i class="fa fa-globe"></i>
                         <span>Perfil Profesional</span>
                     </a>
                 </li>
                 <li class="profile">
-                    <a href="#profile">
+                    <a href="#profile-behavioral">
                         <i class="fa fa-globe"></i>
                         <span>Perfil Conductual</span>
                     </a>
                 </li>
                 <li class="competition">
-                    <a href="#competition">
+                    <a href="#competitions">
                         <i class="fa fa-balance-scale"></i>
                         <span>Competencias</span>
                     </a>
@@ -81,9 +82,6 @@
                     </li>
                 </ul>
             </div>
-        </div>
-        <div class="all-adds">
-            <p></p>
         </div>
         <!-- PROFILE PROFESSIONAL-->
         <div class="profile-professional">
@@ -147,7 +145,7 @@
             </section>
         </div>
         <!-- COMPETITIONS -->
-        <div class="competitions-1">
+        <div class="competitions-1" id="competitions">
             <div class="competitions1-content">
                 <h2 class="competitions1-subtitle">Competencias</h2>
                 <div class="competitions1-image">
@@ -188,47 +186,62 @@
             </div>
         </div>
         <!-- EXPERIENCE -->
-        <div class="experience" id="experience">
-            <section class="experience-half">
-                <h2 class="experience-subtitle">Exper</h2>
-                <div class="experience-icon-wrap">
-                    <i class="fa fa-cogs"></i>
-                </div>
-                <h3>Soporte TI</h3>
-                <p>Funciones de soporte técnico nivel 1 y 2
-                    reportadas en la mesa de ayuda en las cuales se atendia equipos de cómputo, redes e
-                    impresoras, realice mantenimientos preventivos y correctivos. ademas el manejo de herramientas
-                    ofimáticas,
-                    configuración de routers Dlink, switch HP, switch Bdcom y routers Unify, manejo básico en
-                    la parte de redes, formateo de equipos y restauración de fábrica y garantías
-                    directamente con él proveedor, configuración estandar de programas empresariales, manejo de los
-                    diversos
-                    aplicativos
-                    de reportes e inventarios y programas utilizados en la empresa como Autocad 2015, Office
-                    2010, 2013 y 365, programas de referenciación geográfica como Google Earth y Map Source o de
-                    monitoreo de redes como Secure crt, the dude entre otros, envió y recepción de equipos hacia
-                    las diferentes sucursales por medio de la transportadora.
-                </p>
-            </section>
-            <section class="experience-half">
-                <h2 class="experience-subtitle">iencia</h2>
-                <div class="experience-icon-wrap">
-                    <i class="fa fa-server"></i>
-                </div>
-                <h3>Infraestructura TI</h3>
-                <p>Administración de sistemas de información como Windows server 2008, 2012 y 2016, Office
-                    365, Almacenamiento NAS QNap, Antivirus Sophos Central, Impresiones Kyocera,
-                    Biométricos ZKTeco. Manejo de sistemas de telefonía IP como Dreampbx “Audara”, UTM Cyberoam y
-                    correo electrónico en la plataforma WEB Cpanel., En los cuales realice la configuración de los
-                    diferentes
-                    parámetros
-                    requeridos por la empresa. Creación y des habilitación de las cuentas de usuario de los
-                    colaboradores como proceso de ingreso y salida de la compañía documentando todo el
-                    proceso
-                </p>
+        <div class="experience-1" id="experience">
+            <h2 class="experience-subtitle">Exper</h2>
+            <div class="experience-icon-wrap">
+                <i class="fa fa-cogs"></i>
+            </div>
+            <h3>Soporte TI</h3>
+            <p>Funciones de soporte técnico nivel 1 y 2
+                reportadas en la mesa de ayuda en las cuales se atendia equipos de cómputo, redes e
+                impresoras, realice mantenimientos preventivos y correctivos. ademas el manejo de herramientas
+                ofimáticas,
+                configuración de routers Dlink, switch HP, switch Bdcom y routers Unify, manejo básico en
+                la parte de redes, formateo de equipos y restauración de fábrica y garantías
+                directamente con él proveedor, configuración estandar de programas empresariales, manejo de los
+                diversos
+                aplicativos
+                de reportes e inventarios y programas utilizados en la empresa como Autocad 2015, Office
+                2010, 2013 y 365, programas de referenciación geográfica como Google Earth y Map Source o de
+                monitoreo de redes como Secure crt, the dude entre otros, envió y recepción de equipos hacia
+                las diferentes sucursales por medio de la transportadora.
+            </p>
+        </div>
+        <div class="experience-2">
+            <h2 class="experience-subtitle">iencia</h2>
+            <div class="experience-icon-wrap">
+                <i class="fa fa-server"></i>
+            </div>
+            <h3>Infraestructura TI</h3>
+            <p>Administración de sistemas de información como Windows server 2008, 2012 y 2016, Office
+                365, Almacenamiento NAS QNap, Antivirus Sophos Central, Impresiones Kyocera,
+                Biométricos ZKTeco. Manejo de sistemas de telefonía IP como Dreampbx “Audara”, UTM Cyberoam y
+                correo electrónico en la plataforma WEB Cpanel., En los cuales realice la configuración de los
+                diferentes
+                parámetros
+                requeridos por la empresa. Creación y des habilitación de las cuentas de usuario de los
+                colaboradores como proceso de ingreso y salida de la compañía documentando todo el
+                proceso
+            </p>
             </section>
         </div>
     </div>
+
+    <div class="qualifications">
+        <div class="row">
+            <div class="col s12 center-align">
+                <h1 class="qualifications-title">TITULACIONES</h1>
+            </div>
+        </div>
+        <div class="row gallery">
+            <div class="col s12 m4 l3">
+                <div class="material-placeholder">
+                    <img src="images/fondo.jpeg" class="respondive-imge" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- FOOTER -->
     <footer class="footer-site">
         <div class="footer-text">
@@ -237,13 +250,13 @@
                     <a href="index.html">Inicio</a>
                 </li>
                 <li>
-                    <a href="#profile">Perfil Profesional</a>
+                    <a href="#profile-professional">Perfil Profesional</a>
                 </li>
                 <li>
-                    <a href="#profile">Perfil Conductual</a>
+                    <a href="#profile-behavioral">Perfil Conductual</a>
                 </li>
                 <li>
-                    <a href="#competition">Competencias</a>
+                    <a href="#competitions">Competencias</a>
                 </li>
                 <li>
                     <a href="#experience">Experiencia</a>
@@ -279,6 +292,8 @@
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -213,7 +213,6 @@ Imagen Header al 100%
 /* profile professional */
 
 .subtitle-professional {
-    padding-right: 50px;
     font-size: 2.5em;
 }
 
@@ -226,15 +225,14 @@ Imagen Header al 100%
 }
 
 .profile-professional .content-professional-p {
-    text-align: left;
-    padding-right: 50px;
+    text-align: center;
+    margin: 50px 150px;
 }
 
 /* Profile behavioral*/
 
 .subtitle-behavioral {
     font-size: 2.5em;
-    padding-right: 50px;
 }
 
 .content-behavioral {
@@ -246,8 +244,8 @@ Imagen Header al 100%
 }
 
 .profile-behavioral .content-professional-b {
-    text-align: left;
-    padding-right: 50px;
+    text-align: center;
+    margin: 50px 150px;
 }
 
 /*  Competencias IMG*/
@@ -280,23 +278,34 @@ quitamos el grid que ocupa el 100% y lo utlizamos con un block del 50%
 Pendiente de anidar una grid
 */
 
-.experience-half {
+.experience-1 {
     display: block;
-    width: 50%;
-    float: left;
     text-align: center;
 }
 
-.experience-half p {
-    margin: 0 10%;
+.experience-1 p {
+    margin: 5% 10%;
     text-align: left;
 }
 
-.experience h2 {
+.experience-1 h2 {
     font-size: 4rem;
 }
 
-.experience h3 {
+.experience-1 h3 {
+    font-size: 2rem;
+}
+
+.experience-2 {
+    display: block;
+    text-align: center;
+}
+
+.experience-2 h2 {
+    font-size: 4rem;
+}
+
+.experience-2 h3 {
     font-size: 2rem;
 }
 
@@ -318,6 +327,13 @@ Pendiente de anidar una grid
     color: #ffffff;
     font-size: 350%;
     padding: 20%;
+}
+
+/* QUALIFICATIONS */
+
+.gallery img {
+    box-shadow: 0 8px 109x -4px rgba(0, 0, 0, .6);
+    border-radius: 15px;
 }
 
 /*FOOTER */
