@@ -457,14 +457,8 @@ Pendiente de anidar una grid
     transition: 1s;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .materialbox-caption {
         width: 90%;
-    }
-}
-
-@media screen and (max-width: 992px) {
-    .materialbox-caption {
-        width: 70%;
     }
 }
