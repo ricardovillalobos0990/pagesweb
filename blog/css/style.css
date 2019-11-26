@@ -85,6 +85,12 @@ h1 {
     text-decoration: none;
 }
 
+.nav i nav {
+    height: 1px;
+    background-color: red;
+
+}
+
 .nav-main:hover li a {
     padding: 20px 25px;
     transition: .5s;
@@ -331,9 +337,31 @@ Pendiente de anidar una grid
 
 /* QUALIFICATIONS */
 
+.qualifications {
+    background: rgba(0, 0, 0, .5);
+}
+
 .gallery img {
     box-shadow: 0 8px 109x -4px rgba(0, 0, 0, .6);
     border-radius: 15px;
+}
+
+.gallery .col {
+    margin-bottom: 20px;
+}
+
+.materialbox-caption {
+    bottom: 30px;
+    right: 0;
+    width: 40%;
+    height: auto;
+    padding: 10px;
+    margin: auto;
+    background: #000;
+    box-shadow: 5px 5px #fff;
+    font-size: 20px;
+    color: #fff;
+    line-height: 28px;
 }
 
 /*FOOTER */
