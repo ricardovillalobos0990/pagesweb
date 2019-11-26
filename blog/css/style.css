@@ -88,7 +88,6 @@ h1 {
 .nav i nav {
     height: 1px;
     background-color: red;
-
 }
 
 .nav-main:hover li a {
@@ -337,20 +336,29 @@ Pendiente de anidar una grid
 
 /* QUALIFICATIONS */
 
-.qualifications {
-    background: rgba(0, 0, 0, .5);
+.qualifications-wrapper {
+    background-image: linear-gradient(360deg, #f3fafa 90%, #ffffff 100%);
 }
 
+
+.qualifications-wrapper .row {
+    margin-bottom: 0;
+}
+
+.qualifications-title {
+    color: rgb(0, 0, 0);
+    margin-bottom: 40px;
+}
 .gallery img {
-    box-shadow: 0 8px 109x -4px rgba(0, 0, 0, .6);
+    box-shadow: 0 25px 7px -15px rgba(0, 0, 0, .6);
     border-radius: 15px;
 }
 
 .gallery .col {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
-.materialbox-caption {
+.materialboxed-caption {
     bottom: 30px;
     right: 0;
     width: 40%;
@@ -447,4 +455,16 @@ Pendiente de anidar una grid
 .footer-nav li:hover {
     background-color: rgba(28, 28, 28);
     transition: 1s;
+}
+
+@media screen and (max-width: 600px) {
+    .materialbox-caption {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .materialbox-caption {
+        width: 70%;
+    }
 }
