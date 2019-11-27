@@ -95,29 +95,3 @@
     justify-content: center;
     grid-area: footer-rights;
 }
-
-@media screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
-    }
-}
-
-/* @media screen and (max-width: 768px) {
-    .profile-wrapper {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(-1, auto);
-        grid-template-areas:    "cont-image              "
-                                "profile-professional    "
-                                "profile-behavioral      "
-                                "competitions-1          "
-                                "competitions-2          "
-                                "experience-1            "
-                                "experience-2            "
-                                "qualifications         ";
-    }
-
-    body {
-        background: aqua;
-    }
-} */
