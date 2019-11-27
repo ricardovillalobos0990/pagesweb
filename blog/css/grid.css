@@ -96,14 +96,13 @@
     grid-area: footer-rights;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
     body {
-        background: aqua;
+      background-color: lightblue;
     }
 }
 
-
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .profile-wrapper {
         display: grid;
         grid-template-columns: 1fr;
@@ -117,4 +116,8 @@
                                 "experience-2            "
                                 "qualifications         ";
     }
-}
+
+    body {
+        background: aqua;
+    }
+} */

@@ -340,7 +340,6 @@ Pendiente de anidar una grid
     background-image: linear-gradient(360deg, #f3fafa 90%, #ffffff 100%);
 }
 
-
 .qualifications-wrapper .row {
     margin-bottom: 0;
 }
@@ -349,6 +348,7 @@ Pendiente de anidar una grid
     color: rgb(0, 0, 0);
     margin-bottom: 40px;
 }
+
 .gallery img {
     box-shadow: 0 25px 7px -15px rgba(0, 0, 0, .6);
     border-radius: 15px;
@@ -458,7 +458,48 @@ Pendiente de anidar una grid
 }
 
 @media screen and (max-width: 768px) {
+    .profile-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(-1, auto);
+        grid-template-areas: "cont-image              " "profile-professional    " "profile-behavioral      " "competitions-1          " "competitions-2          " "experience-1            " "experience-2            " "qualifications         ";
+    }
+    
     .materialbox-caption {
         width: 90%;
+    }
+    .site-header {
+        display: none;
+    }
+    .comp-img {
+        display: none;
+    }
+    .footer-site .footer-text {
+        display: none;
+    }
+
+    .subtitle-professional {
+        margin-bottom: 10px;
+    }
+    
+    .profile-professional .content-professional-p {
+        text-align: center;
+        margin: 5% 5%;
+    }
+
+    .subtitle-behavioral {
+        margin-bottom: 10px;
+    }
+    
+    .profile-behavioral .content-professional-b {
+        text-align: center;
+        margin: 5% 5%
+    }
+    .competitions-2 h2 {
+        font-size: 1.5em;
+    }
+
+    h1 {
+        font-size: 2em;
     }
 }
