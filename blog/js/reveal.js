@@ -6,15 +6,15 @@ sr.reveal(".navbar", {
 });
 
 sr.reveal(".header-content-left, .info-left, .info-two-left", {
-    duration: 1000,
+    duration: 2000,
     origin: "left",
-    distance: "300px"
+    distance: "150px"
 });
 
 sr.reveal(".header-content-right, .info-right, .info-two-right ", {
-    duration: 1000,
+    duration: 2000,
     origin: "right",
-    distance: "300px"
+    distance: "150px"
 });
 
 sr.reveal(".container-progress-sm", {
@@ -36,7 +36,7 @@ sr.reveal(".card", {
 sr.reveal("#progress-sm, #progess-md", {
     duration: 1000,
     origin: "left",
-    distance: "300px",
+    distance: "100px",
     viewFactor: 0.1
 });
 
