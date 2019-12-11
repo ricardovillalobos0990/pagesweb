@@ -1,30 +1,30 @@
 window.sr = ScrollReveal();
 
 sr.reveal(".navbar", {
-    duration: 3000,
+    duration: 1000,
     origin: "botton"
 });
 
 sr.reveal(".header-content-left, .info-left, .info-two-left", {
-    duration: 2000,
+    duration: 1000,
     origin: "left",
     distance: "300px"
 });
 
 sr.reveal(".header-content-right, .info-right, .info-two-right ", {
-    duration: 3000,
+    duration: 1000,
     origin: "right",
     distance: "300px"
 });
 
 sr.reveal(".container-progress-sm", {
-    duration: 3000,
+    duration: 1000,
     origin: "right",
-    delay: 2000
+    delay: 1000
 });
 
 sr.reveal(".card", {
-    duration: 3000,
+    duration: 1500,
     origin: "center",
     reset: true,
     rotate: {
@@ -34,7 +34,7 @@ sr.reveal(".card", {
 });
 
 sr.reveal("#progress-sm, #progess-md", {
-    duration: 3000,
+    duration: 1000,
     origin: "left",
     distance: "300px",
     viewFactor: 0.1
