@@ -20,5 +20,17 @@ header {
 }
 
 
+footer {
+    background-color: #000;
+    opacity: 0.9;
+}
 
- 
+footer div a {
+    color: rgba(216, 216, 216, 0.5);
+    opacity: 0.9;
+}
+
+footer div a:hover {
+    color: rgb(255, 255, 255);
+    opacity: 0.7;
+}
