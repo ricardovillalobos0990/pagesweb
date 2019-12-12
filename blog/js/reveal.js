@@ -1,24 +1,24 @@
 window.sr = ScrollReveal();
 
 sr.reveal(".navbar", {
-    duration: 1000,
+    duration: 3000,
     origin: "botton"
 });
 
 sr.reveal(".header-content-left, .info-left, .info-two-left", {
-    duration: 2000,
-    origin: "left",
-    distance: "100px"
+    duration: 1000,
+    origin: "bottom",
+    distance: "400px"
 });
 
-sr.reveal(".header-content-right, .info-right, .info-two-right ", {
-    duration: 2000,
-    origin: "right",
-    distance: "100px"
+sr.reveal(".header-content-right, .info-right, .info-two-right, .info-four-right, .info-four-left ", {
+    duration: 800,
+    origin: "top",
+    distance: "400px"
 });
 
 sr.reveal(".container-progress-sm", {
-    duration: 1000,
+    duration: 800,
     origin: "right",
     delay: 1000
 });
@@ -33,15 +33,15 @@ sr.reveal(".card", {
     }
 });
 
-sr.reveal("#progress-sm, #progess-md", {
+sr.reveal("#progress-sm, #progress-md", {
     duration: 1000,
     origin: "left",
     distance: "100px",
     viewFactor: 0.1
 });
 
-sr.reveal("footer", {
-    duration: 1000,
+sr.reveal("footer, .card-info-five", {
+    duration: 2000,
     origin: "bottom",
 });
 
