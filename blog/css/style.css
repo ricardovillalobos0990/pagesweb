@@ -4,12 +4,10 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
 :root {
     --padding-grid: 20px;
     --max-width: 1284px;
 }
-
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     box-sizing: border-box;
     margin: 0;
@@ -19,88 +17,71 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font: inherit;
     vertical-align: baseline;
 }
-
 /* Texto y letra predeterminado */
-
 body {
     background-color: #ffffff;
     text-align: center;
     font: 300 20px/1.5 'Roboto Condensed';
 }
-
 /* 
 Transiccion de enlaces navegacion 
 Alto de lineas para el documento
 Maximo de ancho
 */
-
 html {
     scroll-behavior: smooth;
     line-height: 1.35;
     --maxWidth: 1284px;
 }
-
 /* Formato General
 etiquetas */
-
 p {
     text-align: center;
     font: 300 16px/1.5 'Roboto Mono', monospace';
 
 }
-
 h1 {
     position: relative;
-    font-size: 3em;
-    color: rgba(255, 255, 255, 0.7);
+    font-size: 2em;
+    color: rgba(255, 255, 255);
 }
-
 /* Navegacion Principal */
-
 label {
     display: none;
 }
-
 .site-header {
     position: fixed;
     width: 100%;
     z-index: 99;
     top: 0;
 }
-
+/* OCULTAR BARRA DE NAVEGACION AL DESPLAZAR SCROLL PAGE */
 .headroom {
-    transition: transform .3s ease;
+    transition: transform 2s ease;
 }
-
 .headroom--pinned {
     transform: translateY(0%);
 }
-
 .headroom--unpinned {
     transform: translateY(-100%);
 }
-
+/* ICONOS DE LA NAVEGACION PRINCIPAL */
 .nav-main ul {
     background-color:#212121;
     display: flex;
     justify-content: center;
-    overflow: hidden;
 }
-
 .nav-main li {
     list-style: none;
     border-right: 0.5px rgba(255, 255, 255, 0.2) dotted;
 
 }
-
 .nav-main li:nth-child(1) {
     border-left: 0.5px rgba(255, 255, 255, 0.2) dotted;
 }
-
 .nav-main li:hover {
     background-color: rgba(28, 28, 28);
 }
-
 .nav-main li a {
     display: block;
     color: white;
@@ -108,78 +89,52 @@ label {
     padding: 10px 25px;
     text-decoration: none;
 }
-
 .nav i nav {
     height: 1px;
     background-color: red;
 }
-
+/* EFECTOS DE LA NAVEGACION PRINCIPAL */
 .nav-main:hover li a {
     padding: 20px 25px;
     transition: .5s;
     font-size: 1em;
 }
-
 .nav-main:hover>ul>li:nth-child(1) i {
     color: #f44336
 }
-
 .nav-main:hover>ul>li:nth-child(2) i {
     color: #03a9f4
 }
-
 .nav-main:hover>ul>li:nth-child(3) i {
     color: #ff8a00
 }
-
 .nav-main:hover>ul>li:nth-child(4) i {
     color: #4caf50
 }
-
 .nav-main:hover>ul>li:nth-child(5) i {
     color: #9c27b0
 }
-
 .nav-main:hover>ul>li:nth-child(6) i {
     color: #cf8a00
 }
-
 .nav-main:hover>ul>li:nth-child(7) i {
     color: #00cf68
 }
-
 .nav-header .nav-main .main-sections>li>a>i {
     -webkit-transition: .25s;
     transition: .25s;
     fill: none;
 }
-
 .nav-main span {
     display: block;
     font-size: 1rem;
 }
-
-/* .nav-main::after {
-    content: '';
-    display: block;
-    height: 1px;
-    background-color: rgba(10, 10, 10);
-    transform: scale(0, 1);
-    transition: transform .25s;
-}
-
-.nav-main:hover::after {
-    transform: scale(1, 1);
-} */
-
 /* SLIDER HEADER */
-
 .slider-header {
     width: 100%;
     margin: auto;
     overflow: hidden;
 }
-
 .profile-wrapper .slider-header ul {
     display: flex;
     align-items: center;
@@ -189,13 +144,12 @@ label {
     animation: cambio 20s infinite alternate;
     animation-timing-function: ease-in-out;
 }
-
 .slider-header li {
     width: 100%;
     text-decoration: none;
     list-style: none;
 }
-
+/* TRANSICION DE IMAGENES */
 @keyframes cambio {
     0% {
         margin-left: 0%;
@@ -216,55 +170,43 @@ label {
         margin-left: -200%;
     }
 }
-
 /*
 Imagen Header al 100% 
 */
-
 .slider-header {
-    margin-top: 50px;
     height: 100vh;
     width: 100%;
-    background: url(../images/fondo.jpeg);
+    background: url(../images/cv/fondo.jpg);
     background-repeat: no-repeat center top;
     background-size: cover;
     box-shadow: -100px -100px 100px inset rgba(0, 0, 0, 0.9), 100px 100px 100px inset rgba(0, 0, 0, 0.9);
 }
-
 /* SUBTITLE */
-
 .subtitle3 {
     justify-content: left;
     padding-bottom: 5%;
     font-size: 24px;
     color: #000000;
 }
-
 /* profile professional */
-
 .subtitle-professional {
     font-size: 2.5em;
 }
-
 .content-professional {
-    background: url(../images/dummy-header.jpg);
+    background: url(../images/cv/dummy-header.jpg);
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
-
 .profile-professional .content-professional-p {
     text-align: center;
     margin: 50px 150px;
 }
-
 /* Profile behavioral*/
-
 .subtitle-behavioral {
     font-size: 2.5em;
 }
-
 .content-behavioral {
     background: url(../images/dummy-header.jpg);
     width: 100%;
@@ -272,75 +214,57 @@ Imagen Header al 100%
     background-size: cover;
     background-attachment: fixed;
 }
-
 .profile-behavioral .content-professional-b {
     text-align: center;
     margin: 50px 150px;
 }
-
 /*  Competencias IMG*/
-
 .competitions-1 .competitions1-content {
     justify-items: center;
 }
-
 .competitions1-subtitle {
     font-size: 2.5em;
 }
-
 /* Competencias TEXT*/
-
 .competitions-2 ul {
     list-style: none;
 }
-
 .competitions-2-analysis {
     padding-top: 0;
 }
-
 .competitions-2 h2 {
     font-size: 2.5em;
 }
-
 /*
 Configuracion de 50% para las 2 secciones 1/2
 quitamos el grid que ocupa el 100% y lo utlizamos con un block del 50%
 Pendiente de anidar una grid
 */
-
 .experience-1 {
     display: block;
     text-align: center;
 }
-
 .experience-1 p {
     margin: 5% 10%;
     text-align: left;
 }
-
 .experience-1 h2 {
     font-size: 4rem;
 }
-
 .experience-1 h3 {
     font-size: 2rem;
 }
-
 .experience-2 {
     display: block;
     text-align: center;
 }
-
 .experience-2 h2 {
     font-size: 4rem;
 }
-
 .experience-2 h3 {
     font-size: 2rem;
 }
-
 /* Iconos de la experiencia */
-
 .experience-icon-wrap {
     margin: auto;
     width: 130px;
@@ -351,38 +275,30 @@ Pendiente de anidar una grid
     box-shadow: 0 25px 7px -15px rgba(0, 0, 0, .5);
     margin-bottom: 3%;
 }
-
 .experience-icon-wrap i {
     text-align: center;
     color: #ffffff;
     font-size: 350%;
     padding: 20%;
 }
-
 /* QUALIFICATIONS */
-
 .qualifications-wrapper {
     background-image: linear-gradient(360deg, #f3fafa 90%, #ffffff 100%);
 }
-
 .qualifications-wrapper .row {
     margin-bottom: 0;
 }
-
 .qualifications-title {
     color: rgb(0, 0, 0);
     margin-bottom: 40px;
 }
-
 .gallery img {
     box-shadow: 0 25px 7px -15px rgba(0, 0, 0, .6);
     border-radius: 15px;
 }
-
 .gallery .col {
     margin-bottom: 40px;
 }
-
 .materialboxed-caption {
     bottom: 30px;
     right: 0;
@@ -396,13 +312,10 @@ Pendiente de anidar una grid
     color: #fff;
     line-height: 28px;
 }
-
 /*FOOTER */
-
 .footer-text {
     border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
 }
-
 .footer-nav {
     display: flex;
     list-style: none;
@@ -410,79 +323,51 @@ Pendiente de anidar una grid
     float: left;
     grid-gap: 50px;
 }
-
 .footer-nav li {
     display: grid;
     justify-content: center;
     align-items: center;
 }
-
 .footer-nav a {
     text-decoration: none;
-    color: #fff;
+    color: rgb(143, 136, 136);
     font-size: 1em;
-    margin: 0 10%
+    margin: 0 2em;
 }
-
 .footer-social {
     display: flex;
     list-style: none;
     float: left;
 }
-
 .footer-social i {
-    color: #fff;
+    color: rgb(143, 136, 136);
     font-size: 1em;
     margin: 0 30px;
 }
-
 .footer-social li {
     display: grid;
     justify-content: center;
     align-items: center;
 }
-
 .footer-rights {
     display: flex;
     list-style: none;
 }
 
 .footer-rights a {
-    color: #fff;
+    color: rgb(143, 136, 136);
     font-size: 1em;
     text-decoration: none;
 }
-
-.footer-text:hover>ul>li:nth-child(1) a {
-    color: #0f01da
-}
-
-.footer-text:hover>ul>li:nth-child(2) a {
-    color: #3659aa
-}
-
-.footer-text:hover>ul>li:nth-child(3) a {
-    color: #392a7a
-}
-
-.footer-text:hover>ul>li:nth-child(4) a {
-    color: #3f8aa8
-}
-
-.footer-text:hover>ul>li:nth-child(5) a {
-    color: #36aa40
-}
-
-.footer-text:hover>ul>li:nth-child(6) a {
-    color: #166249
-}
-
-.footer-nav li:hover {
-    background-color: rgba(28, 28, 28);
-    transition: 1s;
+.footer-text a:hover {
+    color: #ffffff
 }
 
 @media screen and (max-width: 768px) {
+    /* 
+    AL CAMBIA EL TAMAÑO DE LA PAGINA SE REPOSICIONA LAS COLUMNAS
+    YA QUE SE UTILIZA GRID LAYOUT en esta pagina
+     */
     .profile-wrapper {
         display: grid;
         grid-template-columns: 1fr;
@@ -517,9 +402,6 @@ Pendiente de anidar una grid
     .nav-main li:nth-child(1) {
         border-top: 0.5px rgba(255, 255, 255, 0.2) dotted;
     }
-    /* .nav-main li:hover {
-        background-color: rgba(28, 28, 28, 0.4);
-    } */
     .site-header {
         display: block;
         float: center;
