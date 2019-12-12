@@ -8,13 +8,13 @@ sr.reveal(".navbar", {
 sr.reveal(".header-content-left, .info-left, .info-two-left", {
     duration: 2000,
     origin: "left",
-    distance: "150px"
+    distance: "100px"
 });
 
 sr.reveal(".header-content-right, .info-right, .info-two-right ", {
     duration: 2000,
     origin: "right",
-    distance: "150px"
+    distance: "100px"
 });
 
 sr.reveal(".container-progress-sm", {
@@ -40,6 +40,10 @@ sr.reveal("#progress-sm, #progess-md", {
     viewFactor: 0.1
 });
 
+sr.reveal("footer", {
+    duration: 1000,
+    origin: "bottom",
+});
 
 //SMOTH SCROLLING
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
