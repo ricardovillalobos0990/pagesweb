@@ -40,7 +40,7 @@ sr.reveal("#progress-sm, #progress-md", {
     viewFactor: 0.1
 });
 
-sr.reveal("footer, .card-info-five", {
+sr.reveal(".card-info-five", {
     duration: 2000,
     origin: "bottom",
 });
