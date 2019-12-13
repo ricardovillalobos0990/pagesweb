@@ -108,15 +108,15 @@ var imagenes = [
     }
 ]
 var galeria = document.getElementById("galeria");
-var contador = 0;
+var bandera = 0;
 for (datos of imagenes) {
     galeria.innerHTML += `
     <div class="col s12 m4 l3">
         <div class="material-placeholder">
-            <img src="images/qualifications/${imagenes[contador].id}" class="responsive-img materialboxed" alt=""
-                data-caption="${imagenes[contador].descripcion}">
+            <img src="images/qualifications/${imagenes[bandera].id}" class="responsive-img materialboxed" alt=""
+                data-caption="${imagenes[bandera].descripcion}">
         </div>
     </div>
 `
-    contador++;
+    bandera++;
 }
