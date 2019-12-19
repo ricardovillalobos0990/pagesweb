@@ -1,7 +1,4 @@
 node_modules/
-blog/images/py/
-blog/py.html
-blog/py/
 package.json
 package-lock.json
 webpack.config.js
