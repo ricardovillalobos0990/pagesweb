@@ -30,7 +30,7 @@
     <!-- NAVIGATION -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="../index.html">
                 <img src="../images/home/logo.png" alt="" style="width: 17%;" class=" rounded-circle d-none d-sm-block">
             </a>
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -65,57 +65,105 @@
         </div>
     </nav>
     <!-- HEADER -->
-    <header class="" id="header">
-        <div class="container mt-5">
-            <div class="row align-items-center">
-                <div class="col-md-4">
-                    <div class="header-content-left">
+    <div class="container py-5" style="min-height: 468px;">
+        <div class="accordion" id="accordion-info-five">
+            <div class="card-info-five">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-info btn-lg" type="button" data-toggle="collapse"
+                            data-target="#collapseOne" aria-controls="collapseOne">
+                            Cajero
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseOne" class="collapse show py-2" data-parent="#accordion-info-five">
+                    <div class="col-md-4">
                         <img src="../images/py/cajero.gif" alt="Imagen #1">
                     </div>
+                    <div class="col-md-4">
+                        <h4> Cajero Automatico</h4>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="number" id="dinero" class="form-control">
+                    </div>
+                    <div class="col-md-4 py-4">
+                        <input type="button" value="Extraer" class="btn btn-primary btn-lg " id="extraer">
+                    </div>
+
+                    <div class="col-md-4">
+                        <p id="resultado"></p>
+                    </div>
+                    <div class="card-body">
+                        <hr>
+                        Se simula el retiro de dinero de un cajero, ingresando una cantidad el cajero le podra
+                        suministrar efectivo o no, tenga en cuenta que actualmente el cajero posee esta
+                        cantidad de dinero $.
+                        <br>
+                        <br>
+                        Cantidad de billetes de 100 mil es igual a 10 <br>
+                        Cantidad de billetes de 50 mil es igual a 20 <br>
+                        Cantidad de billetes de 20 mil es igual a 50 <br>
+                        Cantidad de billetes de 10 mil es igual a 100 <br>
+                        Cantidad de billetes de 5 mil es igual a 5 <br>
+                        <br>
+                        Al pulsar el boton extraer, el cajero enviara una notificacion indicando la cantidad
+                        de billetes retirados y su respectivo valor.
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-header">
-                            <h4> Cajero Automatico</h4>
-                        </div>
-                        <form id="product-form" class="card-body">
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <input type="number" id="dinero" class="form-control">
-                                </div>
+            </div>
+            <div class="card-info-five">
+                <div class="card-header" id="headingTwo">
+
+                    <h2 class="mb-0">
+                        <button class="btn btn-success btn-lg" type="button" data-toggle="collapse"
+                            data-target="#collapseTwo" aria-controls="collapseTwo">
+                            Villa Teclado
+                        </button>
+                    </h2>
+
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-info-five">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <canvas width="400" height="300" id="recuadro" ;></canvas>
                             </div>
-                            <input type="button" value="Extraer" class="btn btn-primary btn-block" id="extraer">
-                            <p id="resultado"></p>
-                        </form>
+                            <div class="col-md-4">
+                                <p class="h1"> Mueve la vaca con las flechas del teclado</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-info-five">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-danger btn-lg" type="button" data-toggle="collapse"
+                            data-target="#collapseThree" aria-controls="collapseThree">
+                            Dibuja con el Mouse
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingTwo"
+                    data-parent="#accordion-info-five">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <canvas width="700" height="700" id="papelito"></canvas>
+                            </div>
+                            <div class="col-md-4">
+                                <p class="h1"> Da clic sobre el rectangulo y mueve el mouse para dibujar</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
-    </header>
-    <!-- PROGESS -->
-    <div class="container" id="progress-sm">
-        <div class=" container-progress-sm">
-            <p class="mb-2">
-                Se simula el retiro de dinero de un cajero, ingresando una cantidad el cajero le podra
-                suministrar efectivo o no, tenga en cuenta que actualmente el cajero posee esta 
-                cantidad de dinero $.
-                <br>
-                <br>
-                Cantidad de billetes de 100 mil es igual a 10 <br>
-                Cantidad de billetes de 50 mil es igual a 20 <br>
-                Cantidad de billetes de 20 mil es igual a 50 <br>
-                Cantidad de billetes de 10 mil es igual a 100 <br>
-                Cantidad de billetes de 5 mil es igual a 5 <br>
-                <br><br>
-                Al pulsar el boton extraer, el cajero enviara una notificacion indicando la cantidad
-                de billetes retirados y su respectivo valor.
-            </p>
-        </div>
+
     </div>
     <!-- FOOTER -->
     <footer>
-        <div class="container text-center pt-4">
+        <div class="container text-center">
             <div class="row">
                 <div class="col-md-4">
                     <a href="ricardovillalobos0990@gmail.com">
@@ -149,8 +197,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-    <!-- <script src="/pagesweb/blog/js/reveal.js"></script> -->
     <script src="/pagesweb/blog/js/cajero.js"></script>
+    <script src="../js/villa.js"></script>
+    <script src="../js/mouse.js"></script>
+
 </body>
 
 </html>
