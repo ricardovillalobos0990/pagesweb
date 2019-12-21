@@ -28,7 +28,7 @@ function dibujarMouse(click){
     }
 }
     
-dibujarLinea("red", 1, 1, 1, 699, papel);    
-dibujarLinea("red", 1, 699, 699, 699, papel);    
-dibujarLinea("red", 1, 1, 699,1, papel);  
-dibujarLinea("red", 699, 1, 699, 699, papel);
+dibujarLinea("red", 1, 1, 1, 299, papel);    
+dibujarLinea("red", 1, 299, 299, 299, papel);    
+dibujarLinea("red", 1, 1, 299,1, papel);  
+dibujarLinea("red", 299, 1, 299, 299, papel);
