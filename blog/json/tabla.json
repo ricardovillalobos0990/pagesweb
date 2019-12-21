@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "nombre": "Ricardo",
+        "email": "ricardovillalobos0990@gmail.com",
+        "estado": false
+    },
+    {
+        "id": 2,
+        "nombre": "Andres",
+        "email": "nano@hotmail.com",
+        "estado": true
+    },
+    {
+        "id": 3,
+        "nombre": "Ignacio",
+        "email": "elri@gmail.com",
+        "estado": false
+    },
+    {
+        "id": 4,
+        "nombre": "Viilalobos",
+        "email": "ricardovillalobos0990@gmail.com",
+        "estado": true
+    },
+    {
+        "id": 5,
+        "nombre": "Andres Ricardo",
+        "email": "villalobos0990@gmail.com",
+        "estado": false
+    },
+    {
+        "id": 6,
+        "nombre": "Marulanda Villalobos",
+        "email": "marulanda@gmail.com",
+        "estado": false
+    }
+]

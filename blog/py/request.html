@@ -22,7 +22,7 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="../css/main.css">
-    <title>Blog Personal - DOM </title>
+    <title>Blog Personal - REQUEST </title>
     <link rel="icon" type="image/png" href="../images/home/logo-p.jpg" />
 </head>
 
@@ -64,103 +64,88 @@
             </div>
         </div>
     </nav>
-    <!-- HEADER -->
-    <div class="container py-5" style="min-height: 468px;">
-        <div class="accordion" id="accordion-info-five">
-            <div class="card-info-five">
-                <div class="card-header" id="headingOne">
-                    <h2 class="mb-0">
-                        <button class="btn btn-info btn-lg" type="button" data-toggle="collapse"
-                            data-target="#collapseOne" aria-controls="collapseOne">
-                            Cajero
-                        </button>
-                    </h2>
-                </div>
-                <div id="collapseOne" class="collapse show py-2" data-parent="#accordion-info-five">
-                    <div class="col-md-4">
-                        <img src="../images/py/cajero.gif" alt="Imagen #1">
-                    </div>
-                    <div class="col-md-4">
-                        <h4> Cajero Automatico</h4>
-                    </div>
-                    <div class="col-md-4">
-                        <input type="number" id="dinero" class="form-control">
-                    </div>
-                    <div class="col-md-4 py-4">
-                        <input type="button" value="Extraer" class="btn btn-primary btn-lg " id="extraer">
-                    </div>
-
-                    <div class="col-md-4">
-                        <p id="resultado"></p>
-                    </div>
-                    <div class="card-body">
-                        <hr>
-                        Se simula el retiro de dinero de un cajero, ingresando una cantidad el cajero le podra
-                        suministrar efectivo o no, tenga en cuenta que actualmente el cajero posee esta
-                        cantidad de dinero $.
-                        <br>
-                        <br>
-                        Cantidad de billetes de 100 mil es igual a 10 <br>
-                        Cantidad de billetes de 50 mil es igual a 20 <br>
-                        Cantidad de billetes de 20 mil es igual a 50 <br>
-                        Cantidad de billetes de 10 mil es igual a 100 <br>
-                        Cantidad de billetes de 5 mil es igual a 5 <br>
-                        <br>
-                        Al pulsar el boton extraer, el cajero enviara una notificacion indicando la cantidad
-                        de billetes retirados y su respectivo valor.
-                    </div>
-                </div>
-            </div>
-            <div class="card-info-five">
-                <div class="card-header" id="headingTwo">
-
-                    <h2 class="mb-0">
-                        <button class="btn btn-success btn-lg" type="button" data-toggle="collapse"
-                            data-target="#collapseTwo" aria-controls="collapseTwo">
-                            Villa Teclado
-                        </button>
-                    </h2>
-
-                </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-info-five">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <canvas width="400" height="300" id="recuadro" ;></canvas>
-                            </div>
-                            <div class="col-md-4">
-                                <p class="h1"> Mueve la vaca con las flechas del teclado</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card-info-five">
-                <div class="card-header" id="headingThree">
-                    <h2 class="mb-0">
-                        <button class="btn btn-danger btn-lg" type="button" data-toggle="collapse"
-                            data-target="#collapseThree" aria-controls="collapseThree">
-                            Dibuja con el Mouse
-                        </button>
-                    </h2>
-                </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingTwo"
-                    data-parent="#accordion-info-five">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-8">
-                                <canvas width="700" height="700" id="papelito"></canvas>
-                            </div>
-                            <div class="col-md-4">
-                                <p class="h1"> Da clic sobre el rectangulo y mueve el mouse para dibujar</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- HEADER FETCH API -->
+    <div class="container py-5 text-center">
+        <h1> Consumir api con fetch</h1>
+        <button class="btn btn-dark w-100" onclick="traer1()"> Agregar </button>
+        <div class="mt-5" id="contenido1">
         </div>
-
     </div>
+    <hr>
+    <!-- FETCH JSON -->
+    <div class="container my-5 text-center">
+        <h1>Consumir archivo json con fetch</h1>
+        <button class="btn btn-dark w-100" onclick="traer2()"> Agregar </button>
+        <div class="mt-5">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Status</th>
+                    </tr>
+                </thead>
+                <tbody id="contenido2">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <hr>
+    <!-- AJAX JSON -->
+    <div class="container my-5 text-center">
+        <h1> Consumir archivo Json con ajax</h1>
+        <div class="section">
+            <button class="btn btn-dark my-4 btn-block" id="boton"> JSON </button>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Correo</th>
+                        <th scope="col">Estado</th>
+                    </tr>
+                </thead>
+                <tbody id="respuesta">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <hr>
+    <!-- PROGRESS -->
+    <div class="container" id="progress-sm">
+        <div class=" container-progress-sm">
+            <p class="mb-2">
+                Te contare un poco sobre como inicie mi carrera en el mundo de las Tics y como ha sido mi ruta de
+                aprendizaje en el desarrollo WEB a través de retos cada vez más ambiciosos los cuales podrás ver al
+                ir navegando por este sitio...
+            </p>
+            <a href="py.html" class="btn btn-outline-secondary btn-lg mt-2 testimonial-btn"> Leer mas ... </a>
+        </div>
+    </div>
+    <!-- PHP PAGINACION -->
+    <div class="container mt-5 text-center">
+        <h1> Paginacion dinamica con base de datos mysql</h1>
+        <div class="row">
+            <img src="../images/request/Paginacion.jpg" alt="">
+        </div>
+        <a class="btn btn-dark" href="../images/request/request-paginacion.7z" download="Paginacion.7z">
+            Descargar Archivo
+        </a>
+    </div>
+    <!-- PHP LOGIN -->
+    <div class="container mt-5 text-center">
+        <h1> Login de usuarios con registro de base de datos MySQL method PDO php</h1>
+        <div class="row d-flex justify-content-center align-item-center">
+            <img src="../images/request/login.jpg" alt="">
+        </div>
+        <a class="btn btn-dark mb-5" href="../images/request/request-login.7z" download="login.7z">
+            Descargar Archivo
+        </a>
+    </div>
+
     <!-- FOOTER -->
     <footer>
         <div class="container text-center">
@@ -197,10 +182,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-    <script src="/pagesweb/blog/js/cajero.js"></script>
-    <script src="../js/villa.js"></script>
-    <script src="../js/mouse.js"></script>
-
+    <script src="/pagesweb/blog/js/request.js"></script>
 </body>
 
 </html>
