@@ -22,6 +22,7 @@ function traer2() {
         })
 }
 function tabla(datos) {
+    contenido2.innerHTML = ""
     for (let valor of datos) {
         contenido2.innerHTML += `
                 
