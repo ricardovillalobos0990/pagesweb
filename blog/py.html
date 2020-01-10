@@ -46,7 +46,7 @@
             <div class="collapse navbar-collapse text-center" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#header"> Inicio</a>
+                        <a class="nav-link" href="index.html"> Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="cv.html" target="_blank">CV</a>
@@ -54,9 +54,10 @@
                     <li class="nav-item dropdown active">
                         <a class="nav-link dropdown-toggle" href="py.html" data-toggle="dropdown">Proyectos</a>
                         <div class="dropdown-menu bg-light">
-                            <a class="dropdown-item" href="./py/dom.html">DOM</a>
-                            <a class="dropdown-item" href="./py/request.html">REQUEST</a>
-                            <!-- <a class="dropdown-item" href="#">Referidos</a> -->
+                            <a class="dropdown-item" href="py.html">MAIN</a>
+                            <a class="dropdown-item" href="py/dom.html">DOM</a>
+                            <a class="dropdown-item" href="py/request.html">REQUEST</a>
+                            <a class="dropdown-item" href="py/referred.html">REFERRED</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -69,13 +70,53 @@
             </div>
         </div>
     </nav>
+    <!-- INFO ONE -->
+    <section id="info-one">
+        <div class="container">
+            <div class="row mt-5 align-items-center">
+                <div class="col-md-6 py-5">
+                    <!-- IMAGEN IZQUIERDA CON CLASES PARA REVEALS -->
+                    <div class="info-left">
+                        <img src="images/py/referidos.jpg" class="rounded" alt="Imagen 2" style="width: 100%"
+                            class="rounded img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-6 my-auto pt-5">
+                    <!-- IMAGEN DERECHA CON CLASES PARA REVEALS -->
+                    <div class="info-right">
+                        <h2>Sistema referidos</h2>
+                        El presente proyecto consiste en desarrollar e implementar un aplicativo web para
+                        el manejo de datos de referidos en las campañas políticas, la principal característica de esta
+                        aplicación es la facilidad en el análisis de la información gracias a un sistema de centralizado
+                        y de capturas de datos en tiempo real, resolviendo así necesidades específicas de las
+                        campañas políticas.
+                        Se incluyen servicios como el registro de geolocalización en tiempo real, e informes
+                        detallados de toda la información obtenida
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PROGESS -->
+    <div class="container" id="progress-sm">
+        <div class=" container-progress-sm">
+            <p class="mb-2">
+                Este proyecto se desarrollo con fines de aprendizaje
+                y desarrollo de proyecto de tecnologia
+                si desea descargarlo puede vistiar el siguiente enlace
+            </p>
+            <a href="py/referred.html" class="btn btn-outline-secondary">
+                Ver mas
+            </a>
+        </div>
+    </div>
     <!-- HEADER -->
-    <header class="" id="header">
-        <div class="container mt-5">
+    <header class="mb-5" id="header">
+        <div class="container ">
             <div class="row align-items-center">
                 <div class="col-md-6">
                     <div class="header-content-left">
-                        <img src="images/py/dom.jpg" alt="Imagen #1" class="rounded-circle">
+                        <img src="images/py/dom.jpg" alt="Imagen #1" class="rounded-circle img-fluid">
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -96,7 +137,7 @@
         </div>
     </header>
     <!-- PROGESS -->
-    <div class="container" id="progress-sm">
+    <div class="container mb-5" id="progress-sm">
         <div class=" container-progress-sm">
             <p class="mb-2">
                 3 ejemplos practicos han sido realizar un programa para retirar
@@ -108,6 +149,7 @@
             </a>
         </div>
     </div>
+
     <!-- FOOTER -->
     <footer>
         <div class="container text-center pt-4">

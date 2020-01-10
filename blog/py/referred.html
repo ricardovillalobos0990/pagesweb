@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- DESCRIPCION DEL SITIO -->
+    <meta name="description" content="Blog Personal">
+    <meta name="author" content="Blog Ricardo Andres Villalobos Marulanda">
+    <meta name="keywords" content="Blog, Personal,CV,Hoja de vida">
+    <meta http-equiv="refresh" content="180">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+    <!-- BOOTSTRAP 4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- FONT AWESOME-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"
+        integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
+    <!-- SCROLL REVEAK -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Blog Personal - DOM </title>
+    <link rel="icon" type="image/png" href="../images/home/logo-p.jpg" />
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../images/home/logo.png" alt="" style="width: 17%;" class=" rounded-circle d-none d-sm-block">
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="my-1 mx-2 close">X</span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html"> Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../cv.html">CV</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="../py.html" data-toggle="dropdown">Proyectos</a>
+                        <div class="dropdown-menu bg-light">
+                            <a class="dropdown-item" href="../py.html">MAIN</a>
+                            <a class="dropdown-item" href="dom.html">DOM</a>
+                            <a class="dropdown-item" href="request.html">REQUEST</a>
+                            <a class="dropdown-item" href="referred.html">REFERRED<a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Acerca de mi</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link disabled" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- INFO ONE -->
+    <section id="info-one">
+        <div class="container">
+            <div class="row mt-5 align-items-center">
+                <div class="col-md-4 pt-5">
+                    <!-- IMAGEN IZQUIERDA CON CLASES PARA REVEALS -->
+                    <div class="info-left">
+                        <img src="../images/py/referidos.jpg" class="rounded" alt="Imagen 2" style="width: 100%"
+                            class="rounded img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-8 my-auto">
+                    <!-- IMAGEN DERECHA CON CLASES PARA REVEALS -->
+                    <div class="info-right">
+                        <h2 class="display-4">¿Que hay implementado?</h2>
+                        <p>
+                            Comprobacion de campos de inicio de session en el frontend como en el backend con
+                            condiciones
+                            como que no esten nulos, que sea un correo electronico valido, se puede ingresar con el
+                            numero de
+                            la cedula o correo electronico, ademas se puede visualizar la contraseña que se esta
+                            introduciendo
+                            <br /> <br />
+                            Comprobacion de reCAPTCHA de GOOGLE:
+                            Un CAPTCHA (test de Turing público y automático para distinguir a los ordenadores de los
+                            humanos, del inglés "Completely Automated Public Turing test to tell Computers and Humans
+                            Apart") es un tipo de medida de seguridad conocido como autenticación pregunta-respuesta.
+                            <br /> <br />
+                            Por ultimo y no menos importante se puede restaurar la contraseña.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- INFO ONE -->
+    <section id="info-one">
+        <div class="container">
+            <div class="row mt-5 align-items-center">
+                <div class="col-md-4">
+                    <!-- IMAGEN IZQUIERDA CON CLASES PARA REVEALS -->
+                    <div class="info-left">
+                        <img src="../images/py/activar.jpg" class="rounded" alt="Imagen 2" style="width: 100%"
+                            class="rounded img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-8 my-auto">
+                    <!-- IMAGEN DERECHA CON CLASES PARA REVEALS -->
+                    <div class="info-right">
+                        <h2 class="display-4">Activar cuenta</h2>
+                        <p>
+                            Cuando se registra un referido con el perfil de usuario el cual va a registrar mas
+                            referidos, las credenciales de acceso se generan y se envian al correo electronico
+                            donde se debe activar la cuenta ya que es una buena practica validar que el correo
+                            electronico si pertenezca al usuario. una vez activada la cuenta se debe ingresar
+                            con los datos enviados al correo electronico
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <!-- IMAGEN IZQUIERDA CON CLASES PARA REVEALS -->
+                    <div class="info-left">
+                        <img src="../images/py/recuperar.jpg" class="rounded" alt="Imagen 2" style="width: 100%"
+                            class="rounded img-fluid">
+                    </div>
+
+
+                </div>
+                <div class="col-md-8 my-auto">
+                    <!-- IMAGEN DERECHA CON CLASES PARA REVEALS -->
+                    <div class="info-right">
+                        <h2 class="display-4">Recupera contraseña</h2>
+                        <p>
+                            Si un usuario no recuerda la contraseña puede restaurarla a traves del correo electronico
+                            el cual le enviara un link con un token en el cual al abrir el link puede escribir una nueva
+                            contraseña. alli tambien hay validaciones como que las contraseñas coincidan y que una vez
+                            se restaure no se pueda utilizar el link para restaurar nuevamente.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- INFO ONE -->
+    <section id="info-one">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <!-- IMAGEN IZQUIERDA CON CLASES PARA REVEALS -->
+                    <div class="info-left">
+                        <img src="../images/py/formulario.jpg" class="rounded" alt="Imagen 2" style="width: 100%"
+                            class="rounded img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-6 my-auto pt-5">
+                    <!-- IMAGEN DERECHA CON CLASES PARA REVEALS -->
+                    <div class="info-right">
+                        <h2 class="display-4">Formulario</h2>
+                        <p> Descripcion breve del funcionamiento:
+                            El coordinador ingresa en la plataforma los candidatos para votar,
+                            los cuales los referidos podrán seleccionar para su intención de voto en la campaña.
+                            <br /><br />
+                            Los supervisores enviaran el usuario y la contraseña al correo
+                            de los delegados principales para ingresar la aplicación en la web de allí ingresaran por
+                            primera vez al perfil de usuario el cual le mostrara
+                            información general de la campaña y en la pestaña registro mostrara los campos del
+                            formulario. Según la clase de elección “Atípica u ordinaria” se mostrara por ejemplo del
+                            Departamento los gobernadores, diputados de las Asambleas Departamentales, alcaldes del
+                            municipios, concejales municipales y ediles de las Juntas Administradoras Locales del
+                            territorio nacional permitiendo elegir por el cual se tiene la intención de voto, se
+                            indicara si esta persona solo va hacer un <strong>referido </strong> o
+                            <strong>usuario</strong> para referir a más personas.,
+                            de este modo quedara registrado como referido y en función de usuario se le enviara la
+                            información de acceso y contraseña a su correo electrónico con los términos y
+                            condiciones de uso de datos personales.
+                            <br /><br />
+                            Los usuarios podran visualizar los datos de las personas referidas ademas tendran estados
+                            los cuales serviran para confirmar que la personas confirmo la intencion de voto por medio
+                            de una llamade del agente del Call center el cual validara la información y
+                            lograra cambiar el estado a "OK" "PENDIENTE" o "NO CONTESTA" entreo otras y colocar las
+                            observaciones las cuales les enviara una notificación por correo.
+                            Un usuario con el perfil de reportes lograra ver la información general de los usuarios y
+                            referidos y un usuario puede ver las personas que ha referido para editar o elimnar
+                            informacion segun el caso.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- PROGESS -->
+    <div class="container my-5" id="progress-sm">
+        <div class=" container-progress-sm">
+            <p class="mb-2">
+                Este proyecto se desarrollo con fines de aprendizaje utilizando Html5, Bootstrap, jQuery, Javascript,
+                MySQL, y php.
+            </p>
+            <a href="../images/py/referidos.7z" class="btn btn-secondary" download="referidos.7z">
+                Descargar
+            </a>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="ricardovillalobos0990@gmail.com">
+                        <i class="fas fa-envelope-open-text mt-4 h3"></i>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://www.facebook.com/ricardovillalobos0990">
+                        <i class="fab fa-facebook-f mt-4 h3"></i>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://github.com/ricardovillalobos0990" class="nav-link">
+                        <i class="fab fa-github-square mt-4 h3"></i>
+                    </a>
+                </div>
+                <hr />
+                <div class="col-md-12 mt-4">
+                    <p class="h4">Copyright &copy; 2019</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="js/reveal.js"></script>
+</body>
+</body>
+
+</html>

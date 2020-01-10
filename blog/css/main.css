@@ -1,6 +1,3 @@
-@import "../css/grid.css"; /* Using a string */
-@import url("../css/grid.css"); /* Using a url */
-
 body {
     font-family: 'Titillium Web', sans-serif;
     margin-top: 48px;
@@ -10,7 +7,7 @@ body {
     opacity: 0.9;
 }
 header {
-    margin-top: 75px;
+    margin-top: 50px;
 }
 .navbar-toggler>.close {
     display:inline;
