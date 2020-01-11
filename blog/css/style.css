@@ -21,7 +21,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 body {
     background-color: #ffffff;
     text-align: center;
-    font: 300 20px/1.5 'Roboto Condensed';
+    font: 300 17px/1.5 'Roboto Condensed';
     
 }
 :target{
@@ -187,6 +187,7 @@ Imagen Header al 100%
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    padding-top: 50px;
 }
 .profile-professional .content-professional-p {
     text-align: center;
@@ -223,6 +224,9 @@ Imagen Header al 100%
 }
 .competitions-2 h2 {
     font-size: 2.5em;
+}
+.competitions-2 p {
+    margin: 5% 10%;
 }
 /*
 Configuracion de 50% para las 2 secciones 1/2
