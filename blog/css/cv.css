@@ -1,0 +1,334 @@
+/* Transiccion de enlaces navegacion Alto de lineas para el documento Maximo de ancho */
+html {
+  scroll-behavior: smooth;
+  line-height: 1.35;
+  --maxWidth: 1284px;
+}
+/* LOADER */
+.hide {
+  display: none !important;
+}
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.lds-ripple {
+  display: block;
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  z-index: 100;
+}
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid rgb(0, 0, 0);
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: 400 18px/1.5 "Roboto Condensed";
+}
+/* BASIC SETUP */
+.page-wrapper {
+  width: 100%;
+  height: auto;
+}
+.nav-wrapper {
+  width: 100%;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 10px 0;
+}
+.grad-bar {
+  height: 5px;
+  background: linear-gradient(
+    -45deg,
+    #ee7752,
+    #41d523,
+    #e73c7e,
+    #d5d223,
+    #db1111,
+    #23a6d5
+  );
+  background-size: 600% 600%;
+  -webkit-animation: gradbar 15s ease infinite;
+  -moz-animation: gradbar 15s ease infinite;
+  animation: gradbar 15s ease infinite;
+}
+/* NAVIGATION */
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  height: 50px;
+  overflow: hidden;
+}
+.navbar img {
+  height: 40px;
+  width: auto;
+  justify-self: start;
+  margin-left: 40px;
+  border-radius: 50px;
+}
+.navbar ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  justify-self: end;
+  margin-right: 100px;
+}
+.nav-item a {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease-out;
+}
+.nav-item a:hover {
+  color: #3498db;
+}
+.no-mobile {
+  transform: translate(0);
+  transition: transform 0.3s ease-in-out;
+}
+/* MOBILE MENU & ANIMATION */
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #ccc2c2;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.menu-toggle {
+  justify-self: end;
+  margin-right: 25px;
+  display: none;
+}
+.menu-toggle:hover {
+  cursor: pointer;
+}
+#mobile-menu.is-active .bar:nth-child(1) {
+  -webkit-transform: translateY(8px) rotate(45deg);
+  -ms-transform: translateY(8px) rotate(45deg);
+  -o-transform: translateY(8px) rotate(45deg);
+  transform: translateY(8px) rotate(45deg);
+}
+#mobile-menu.is-active .bar:nth-child(2) {
+  opacity: 0;
+}
+#mobile-menu.is-active .bar:nth-child(3) {
+  -webkit-transform: translateY(-8px) rotate(-45deg);
+  -ms-transform: translateY(-8px) rotate(-45deg);
+  -o-transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-8px) rotate(-45deg);
+}
+/* PERFIL PROFESIONAL */
+.profesional-container {
+  display: grid;
+  grid-template-areas:
+    "title-p description-p description-p description-p"
+    "description-c description-c description-c title-c"
+    "image-c image-c concentration concentration"
+    "image-c image-c obedience obedience"
+    "image-c image-c precision precision"
+    ". experience experience ."
+    "support support infraestructure infraestructure "
+    "certifications certifications certifications certifications"
+    "footer footer footer footer";
+
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(1fr);
+  align-items: center;
+  padding-top: 10px;
+  margin: 0 8%;
+  background-image: url(https://image.freepik.com/vector-/fondo-blanco-hexagono-tecnologia-azul_1017-19366.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.profesional-title {
+  grid-area: title-p;
+}
+.title {
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.profesional-description {
+  grid-area: description-p;
+}
+.description {
+  margin: 7%;
+}
+.behavioral-title {
+  grid-area: title-c;
+}
+.behavioral-description {
+  grid-area: description-c;
+}
+.image-c {
+  grid-area: image-c;
+}
+.image-c img {
+  width: 100%;
+}
+.concentration {
+  grid-area: concentration;
+}
+.obedience {
+  grid-area: obedience;
+}
+.precision {
+  grid-area: precision;
+}
+.experience {
+  grid-area: experience;
+}
+.support {
+  cursor: wait;
+  height: 100%;
+  grid-area: support;
+}
+.infraestructure {
+  cursor: wait;
+
+  height: 100%;
+  grid-area: infraestructure;
+}
+/* Iconos de la experiencia */
+.experience-icon-wrap {
+  margin: auto;
+  width: 130px;
+  height: 130px;
+  background-image: linear-gradient(
+    to top left,
+    rgb(0, 255, 255) 60%,
+    rgb(211, 254, 255) 100%
+  );
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 25px 7px -15px rgba(0, 0, 0, 0.5);
+  margin-bottom: 3%;
+}
+.experience-icon-wrap i {
+  text-align: center;
+  color: #ffffff;
+  font-size: 350%;
+  padding: 20%;
+}
+.support:hover .experience-icon-wrap,
+.infraestructure:hover .experience-icon-wrap {
+  animation-name: icons;
+  animation-duration: 3s;
+  animation-iteration-count: 2;
+}
+.certifications {
+  grid-area: certifications;
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-rows: auto auto;
+  grid-gap: 20px;
+  padding: 2%;
+}
+/* CENTRAR LAS IMAGENES */
+.modal-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* NO MODAL ESTILOS */
+.modal-container img {
+  cursor: zoom-in;
+  width: 260px;
+  border-radius: 10px;
+  box-shadow: 0 25px 7px -15px rgba(0, 0, 0, 0.5);
+}
+/* MODAL ACTIVO */
+.modal-container.active {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+}
+/* MODAL ACTIVO ESTILOS */
+.modal-container.active img {
+  cursor: zoom-out;
+  z-index: 10;
+  width: 50%;
+  animation-name: galeria;
+  animation-duration: 0.8s;
+}
+/* MODAL ACTIVO FONDO */
+.modal-container.active::after {
+  cursor: zoom-out;
+  content: "";
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1;
+  animation-name: galeria-after;
+  animation-duration: 0.8s;
+}
+
+.footer {
+  grid-area: footer;
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: auto auto;
+  grid-gap: 20px;
+  padding: 2%;
+}
+
+.footer-nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 100px;
+  padding: 20px;
+}
+.footer-nav li a {
+  color: aliceblue;
+  font-size: 1.5rem;
+}
+
+.copy {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}

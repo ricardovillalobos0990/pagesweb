@@ -1,0 +1,92 @@
+/* ANIMATION LOADER */
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+/* ANIMATION EXPERIENCE */
+@keyframes icons {
+  0% {
+    transform: scale(0.9) rotate(0deg);
+  }
+  20% {
+    transform: scale(0.5) rotate(360deg);
+  }
+  50% {
+    transform: scale(0.8) rotate(720deg);
+  }
+  80% {
+    transform: scale(0.5) rotate(360deg);
+  }
+  100% {
+    transform: scale(0.9) rotate(0deg);
+  }
+}
+/* ANIMATION GALLERY */
+@keyframes galeria {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/* ANIMATION GALLERY MODAL */
+@keyframes galeria-after {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* KEYFRAME ANIMATIONS */
+@-webkit-keyframes gradbar {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* ANIMATION BARRA DE COLORES */
+@-moz-keyframes gradbar {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradbar {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

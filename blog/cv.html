@@ -1,289 +1,221 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Este es mi curriculum vitae">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Este es mi curriculum vitae" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- DESCRIPCION DEL SITIO -->
-    <meta name="author" content="Blog Ricardo Andres Villalobos Marulanda">
+    <meta name="author" content="Blog Ricardo Andres Villalobos Marulanda" />
     <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!-- TIPOGRAFIA -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
-    <!-- MATERIALIZE -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
     <!-- CSS PERSONALIZADO -->
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cv.css" />
+    <link rel="stylesheet" href="css/cv-animation.css" />
+    <link rel="stylesheet" href="css/cv-media-query.css" />
     <link rel="icon" type="image/png" href="images/home/logo-p.jpg" />
     <title>Blog Personal - CV</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <div class="loader" id="loader">
+      <div class="lds-ripple">
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
     <!-- SITE-HEDAER -->
-    <header class="site-header" id="header">
-        <!-- ICONO DE HTML Y CLASES PARA ESCONDER CON CSS Y MEDIA QUERYS -->
-        <label id="toggleNav" for="toggle">&#9777</label>
-        <input type="checkbox" id="toggle">
-        <div class="nav-main">
-            <!-- NAVEGACION PRINCIPAL -->
-            <ul class="main-sections">
-                <li class="start">
-                    <a href="/pagesweb/blog/">
-                        <i class="fa fa-home"></i>
-                        <span>Inicio</span>
-                    </a>
-                </li>
-                <li class="profile">
-                    <a href="#profile-professional">
-                        <i class="fa fa-globe"></i>
-                        <span>Perfil Profesional</span>
-                    </a>
-                </li>
-                <li class="competition">
-                    <a href="#competitions">
-                        <i class="fa fa-balance-scale"></i>
-                        <span>Competencias</span>
-                    </a>
-                </li>
-                <li class="experience">
-                    <a href="#experience">
-                        <i class="fa fa-arrows-alt"></i>
-                        <span>Experiencia</span>
-                    </a>
-                </li>
-                <li class="qualifications">
-                    <a href="#qualifications">
-                        <i class="fa fa-graduation-cap"></i>
-                        <span>Titulos</span>
-                    </a>
-                </li>
-                <li class="contact">
-                    <a href="#contact">
-                        <i class="fa fa-id-card"></i>
-                        <span>Contacto</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </header>
-    <!-- IMAGEN HEADER -->
-    <div class="profile-wrapper">
-        <div class="cont-img">
-            <div class="slider-header">
-                <ul>
-                    <li>
-                        <h1>Me complace darle la más cordial bienvenida a mi sitio web personal</h1>
-                    </li>
-                    <li>
-                        <h1>Gracias por visitar mi pagina WEB</h1>
-                    </li>
-                    <li>
-                        <h1>Conoce un poco más sobre mi</h1>
-                    </li>
-                </ul>
+    <div class="hide">
+      <div class="page-wrapper">
+        <!-- NAVEGACION PRINCIPAL -->
+        <div class="nav-wrapper">
+          <div class="grad-bar"></div>
+          <nav class="navbar">
+            <a href="/blog/">
+              <img src="./images/home/logo.png" alt="logo"/>
+            </a>
+            <div class="menu-toggle" id="mobile-menu">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
             </div>
+            <ul class="nav no-mobile">
+              <li class="nav-item">
+                <a href="#profile-professional">Perfil Profesional</a>
+              </li>
+              <li class="nav-item"><a href="#competitions">Competencias</a></li>
+              <li class="nav-item"><a href="#experience">Experiencia</a></li>
+              <li class="nav-item"><a href="#qualifications">Titulos</a></li>
+              <li class="nav-item"><a href="#footer">Contacto</a></li>
+            </ul>
+          </nav>
         </div>
+      </div>
+
+      <div class="profesional-container" id="profile-professional">
         <!-- PROFILE PROFESSIONAL-->
-        <div class="profile-professional">
-            <section class="content-professional" id="profile-professional">
-                <h2 class="subtitle-professional">Perfil Profesional</h2>
-                <p class="content-professional-p">
-                    Soy tecnólogo en mantenimiento de equipos de cómputo, diseño e instalación de cableado
-                    estructurado e ingeniero en sistemas en formación, con más de 3 años de experiencia, la cual
-                    he desempeñado en el área de soporte TI e infraestructura TI., capaz de aportar al
-                    mejoramiento de los servicios disponibles de la infraestructura tecnológica, manejo de
-                    proveedores, soporte técnico a cualquier nivel con atención a usuarios.
-                    <br><br>
-                    Soy una persona altamente responsable, proactiva y ante todo respetuosa con los demás; soy
-                    un profesional comprometido con la investigación, el liderazgo y el trabajo en equipo que
-                    pone todo su empeño en las labores que esté realizando; capaz de trabajar bajo presión y
-                    desarrollar cualquier labor o función asignada con la mayor eficacia del caso.
-                </p>
-            </section>
+        <section class="profesional-title">
+          <h2 class="title">Perfil Profesional</h2>
+        </section>
+        <section class="profesional-description">
+          <p class="description">
+            Soy tecnólogo en mantenimiento de equipos de cómputo, diseño e
+            instalación de cableado estructurado e ingeniero en sistemas en
+            formación con más de 3 años de experiencia la cual he desempeñado en
+            el área de soporte e infraestructura TI, capaz de aportar al
+            mejoramiento de los servicios disponibles de la infraestructura
+            tecnológica, manejo de proveedores y soporte técnico a cualquier
+            nivel.
+            <br /><br />
+            Soy una persona altamente responsable, proactiva y ante todo
+            respetuosa con los demás, que pone todo su empeño en las labores que
+            esté realizando. capaz de trabajar bajo presión y desarrollar
+            cualquier labor o función asignada con la mayor eficacia del caso.
+          </p>
+        </section>
+        <section class="behavioral-title">
+          <h2 class="title">Perfil Conductual</h2>
+        </section>
+        <section class="behavioral-description">
+          <p class="description">
+            Ricardo Andrés es un individuo preciso, exacto y meticuloso.
+            Constantemente busca la perfección y se interesa mucho en los
+            detalles. Es normalmente tranquilo y discreto, y trabajará sin
+            problemas una vez que le hayan explicado minuciosamente qué es lo
+            que tiene que hacer., es cuidadoso y si bien tiene cierta
+            inclinación por el detalle, también necesita realizar tareas de
+            carácter variado, para evitar aburrirse y lograr la máxima
+            eficiencia. Le gusta reflexionar sobre las cosas. usa sus destrezas
+            lógicas y analíticas para responder a problemas complejos y
+            difíciles.<br />
+            <br />Lo que más destaca es la forma sistemática, metódica y
+            disciplinada. En su aproximación al trabajo, tiende a seguir muy de
+            cerca las políticas, pautas y reglas. Tiende a seguir el protocolo.
+            Trabaja más eficaz y cómodamente en situaciones estructuradas,
+            claras e inequívocas. Puede trabajar bien por sí mismo en la
+            solución de problemas y planeamiento de actividades. Puede ser
+            eficiente en equipos de trabajo, en grupos pequeños, y en relaciones
+            de persona a persona.<br />
+            <br />
+            Ricardo Andres intentará satisfacer las necesidades de los otros. En
+            general tenderá a respetar las ideas, opiniones y conductas de otras
+            personas; sobre todo de aquéllas en quien confía. Se sentirá
+            motivado realizando tareas de carácter especializado, ya sea como
+            miembro de un equipo o por su cuenta. Su autoridad debe estar basada
+            principalmente en la pericia y sus funciones pueden incluir tareas
+            de carácter variado. Su aproximación general es cautelosa y
+            conservadora. Prefiere tener una buena cantidad de datos a su
+            disposición antes de comprometerse a un curso de acción o tomar una
+            decisión..
+          </p>
+        </section>
+        <div class="image-c">
+          <img src="./images/cv/competencias.png" alt="Competencias" />
         </div>
-        <!-- PROFILE BEHAVIORAL -->
-        <div class="profile-behavioral">
-            <section class="content-behavioral" id="profile-behavioral">
-                <h2 class="subtitle-behavioral">Perfil Conductual</h2>
-                <p class="content-professional-b">Ricardo Andrés es un individuo receptivo, estable y meticuloso
-                    que necesita comprender por qué y cómo se hacen las cosas.
-                    Puede trabajar bien solo al pensar y planear las tareas. También trabajará
-                    eficazmente en relaciones de persona a persona y en grupos..<br /><br>
-                    A Ricardo Andres lo incomodan las situaciones antagónicas y las confrontaciones cara a cara. Tiene
-                    buenas habilidades para escuchar a los demás. Su estilo empático lo lleva a ser tolerante
-                    con la gente, a estar dispuesto a respetar las ideas y opiniones de los otros y a ser generalmente
-                    respetuoso con las personas. Ellas lo encontrarán, amable, callado y pacífico.
-                    <br><br>
-                    Ricardo Andrés es eficaz gracias a su habilidad de identificar y analizar hechos y datos.
-                    Es idóneo en asignaciones que requieren persistencia, paciencia y minuciosidad.
-                    Puede ocuparse eficazmente de asignaciones de trabajo rutinarias y tareas repetitivas. En sus
-                    discusiones utiliza hechos, procedimientos y normas, como base de cualquier argumento.
-                    Se aproxima a los problemas y decisiones de una manera reflexiva y enfocada.
-                    Opera de manera metódica y lógica al resolver los problemas. Prefiere entablar relaciones estables
-                    tanto en el trabajo como en su vida privada, si bien diferencia claramente entre amigos
-                    y conocidos. Le gusta saber hacia dónde va y por qué.
-                    Puede adaptarse a las necesidades del equipo, pero prefiere que le encomienden alguna tarea en
-                    particular y un ambiente de trabajo que permita concentración. Está a menudo atento a los detalles,
-                    pero no se pierde en ellos. Quiere pensar cuidadosamente las cosas antes de tomar una decisión
-                    Al priorizar la “calidad” a la “cantidad” y buscar la efectividad, prefiere contar con el tiempo
-                    suficiente para los proyectos en los cuales se involucra. <br><br>
-                </p>
-            </section>
+        <div class="concentration" id="competitions">
+          <h1 class="title">CONCENTRACION</h1>
+          <p class="description">
+            Esta competencia ayuda a identificar si la persona es por naturaleza
+            un pensador preciso y un asiduo trabajador que prefiere seguir
+            procedimientos. Mide si es perfeccionista, si se esmera para no
+            cometer errores en su trabajo, si es analítico, preciso y ordenado,
+            si se concentra en los detalles y si sigue procedimientos en su
+            orientación a los resultados.
+          </p>
         </div>
-        <!-- COMPETITIONS -->
-        <div class="competitions-1" id="competitions">
-            <!-- CLASES PARA DAR ESTILOS CON CSS -->
-            <div class="competitions1-content">
-                <h2 class="competitions1-subtitle">Competencias</h2>
-                <div class="competitions1-image">
-                    <img class="comp-img" src="images/cv/competencias.png" alt="">
-                </div>
-            </div>
+        <div class="obedience">
+          <h1 class="title">OBEDIENCIA</h1>
+          <p class="description">
+            Esta competencia ayuda a identificar si la persona por naturaleza
+            detesta cometer fallas o errores en su trabajo. Mide si se interesa
+            en los detalles de su trabajo o asignación, si se esforzará por
+            hacer su trabajo perfectamente y si se orienta a los resultados de
+            forma consistente y segura, analizando la información disponible y
+            siguiendo los procedimientos.
+          </p>
         </div>
-        <div class="competitions-2">
-            <div class="competitions-2-text">
-                <ul>
-                    <li>
-                        <h2 class="competitions-2-analysis"> ANÁLISIS</h2>
-                        <p>Esta competencia ayuda a identificar si la persona tiene por naturaleza una marcada tendencia
-                            hacia la administración y la especialización. Mide si es confiable, disciplinada, precisa y
-                            si se orienta a los resultados analizando, relevando información y hechos para avanzar
-                            de forma lógica, sistemática y ordenada.
-                        </p>
-                    </li>
-                    <li>
-                        <h2>SERVICIO Y SOPORTE</h2>
-                        <p>Esta competencia ayuda a identificar si la persona es por naturaleza paciente, calmada y
-                            equilibrada, incluso en situaciones de presión. Mide si puede llegar a mostrarse renuente a
-                            dedicar tiempo a los demás y si se orienta a los resultados de forma servicial, escuchando,
-                            profundizando y analizando la información.</p>
-                    </li>
-                    <li>
-                        <h2>PRECISIÓN</h2>
-                        <p>Esta competencia ayuda a aparato
-                            identificar si la persona, por naturaleza, trabaja más cómodo y
-                            eficazmente en ambientes y situaciones estructuradas y bien definidas. Mide si es cautelosa
-                            en la aproximación a los problemas y las decisiones, y si es precisa y cuidadosa en su
-                            orientación a los resultados.
-                        </p>
-                    </li>
-                </ul>
-            </div>
+        <div class="precision">
+          <h1 class="title">PRECISIÓN</h1>
+          <p class="description">
+            Esta competencia ayuda a identificar si la persona es por naturaleza
+            paciente, calmada y equilibrada, incluso en situaciones de presión.
+            Mide si puede llegar a mostrarse renuente a dedicar tiempo a los
+            demás y si se orienta a los resultados de forma servicial,
+            escuchando, profundizando y analizando la información.
+          </p>
         </div>
-        <!-- EXPERIENCE -->
-        <div class="experience-1" id="experience">
-            <!-- CLASES PARA DAR ESTILOS CON CSS -->
-            <h2 class="experience-subtitle">Exper</h2>
-            <div class="experience-icon-wrap">
-                <i class="fa fa-cogs"></i>
-            </div>
-            <h3>Soporte TI</h3>
-            <p>Funciones de soporte técnico nivel 1 y 2
-                reportadas en la mesa de ayuda en las cuales se atendia equipos de cómputo, redes e
-                impresoras, realice mantenimientos preventivos y correctivos. ademas el manejo de herramientas
-                ofimáticas,
-                configuración de routers Dlink, switch HP, switch Bdcom y routers Unify, manejo básico en
-                la parte de redes, formateo de equipos y restauración de fábrica y garantías
-                directamente con él proveedor, configuración estandar de programas empresariales, manejo de los
-                diversos aplicativos
-                de reportes e inventarios y programas utilizados en la empresa como Autocad 2015, Office
-                2010, 2013 y 365, programas de referenciación geográfica como Google Earth y Map Source o de
-                monitoreo de redes como Secure crt, the dude entre otros, envió y recepción de equipos hacia
-                las diferentes sucursales por medio de la transportadora.
-            </p>
+        <div class="experience" id="experience">
+          <h1 class="title">Experiencia</h1>
         </div>
-        <div class="experience-2">
-            <!-- CLASES PARA DAR ESTILOS CON CSS -->
-            <h2 class="experience-subtitle">iencia</h2>
-            <div class="experience-icon-wrap">
-                <i class="fa fa-server"></i>
-            </div>
-            <h3>Infraestructura TI</h3>
-            <p>Administración de sistemas de información como Windows server 2008, 2012 y 2016, Office
-                365, Almacenamiento NAS QNap, Antivirus Sophos Central, Impresiones Kyocera,
-                Biométricos ZKTeco. Manejo de sistemas de telefonía IP como Dreampbx “Audara”, UTM Cyberoam y
-                correo electrónico en la plataforma WEB Cpanel., En los cuales realice la configuración de los
-                diferentes parámetros
-                requeridos por la empresa. Creación y des habilitación de las cuentas de usuario de los
-                colaboradores como proceso de ingreso y salida de la compañía documentando todo el
-                proceso
-            </p>
-            </section>
+        <div class="support">
+          <div class="experience-icon-wrap">
+            <i class="fa fa-cogs"></i>
+          </div>
+          <p class="description">
+            Brinde apoyo al usuario interno para el normal desarrollo de tareas
+            diarias sobre problemas y/o averías relacionadas a la utilización de
+            software corporativo y de hardware., ya sea de equipos de cómputo,
+            redes e impresoras o servicios como paquete ofimático, correo
+            electrónico, telefonía, antivirus, escritorio remoto, permisos de
+            File Server, Creación, modificación y des habilitación de las
+            cuentas de usuario de los colaboradores como proceso de ingreso y
+            salida de la compañía documentando todo el proceso.
+          </p>
         </div>
+        <div class="infraestructure">
+          <div class="experience-icon-wrap">
+            <i class="fa fa-server"></i>
+          </div>
+          <p class="description">
+            Administración de sistemas de información como Windows Server 2008,
+            2012 y 2016, Office 365, Almacenamiento NAS QNap, Antivirus Sophos
+            Central, Control de impresiones Kyocera Net Veawer y control de
+            acceso ZKTeco., Manejo de sistemas de telefonía IP como Dreampbx
+            Audara, UTM Cyberoam y correo electrónico en la plataforma WEB
+            Cpanel realizando la configuración de los diferentes parámetros
+            requeridos por la empresa logrando dar soporte en cualquier nivel.
+            Elabore y presente informes a mi jefe inmediato de las actividades
+            realizadas.
+          </p>
+        </div>
+        <div class="certifications" id="qualifications"></div>
+      </div>
+      <div class="footer-wrapper" id="footer">
+        <nav class="footer-nav">
+          <ul>
+            <li class="nav-item">
+              <a href="ricardovillalobos0990@gmail.com" target="_blank"
+                ><i class="fa fa-envelope-o"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="https://www.twitter.com/rvillalobos0990" target="_blank"
+                ><i class="fa fa-twitter"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="https://github.com/ricardovillalobos0990" target="_blank"
+                ><i class="fa fa-git"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+        <div class="copy">
+          <a>Copyright ©2020</a>
+        </div>
+      </div>
+      <div class="grad-bar"></div>
     </div>
-    <!-- TITULACIONES -->
-    <div class="qualifications-wrapper" id="qualifications">
-        <!-- SE UTILIZA MATERIALIZE PARA ESTAS CLASES -->
-        <div class="row">
-            <div class="col s12 center-align">
-                <h1 class="qualifications-title">TITULACIONES</h1>
-            </div>
-        </div>
-        <!-- 
-            IMPORTANTE EL CONTENIDO SE RELLENA CON JAVASCRIPT CON LA CLASE GALERIA
-            LA CUAL ITERA SEGUN UN OBJETO CREADO
-         -->
-        <div class="row gallery" id="galeria">
 
-        </div>
-    </div>
-    <!-- FOOTER -->
-    <footer class="footer-site" id="contact">
-        <!-- FOOTER CREADO CON CSS LO MAS FACIL POSIBLE -->
-        <div class="footer-text">
-            <ul class="footer-nav">
-                <li>
-                    <a href="index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="cv.html">CV</a>
-                </li>
-                <li>
-                    <a href="py.html">Proyectos</a>
-                </li>
-                <!--<li>
-                    <a href="/pagesweb/blog/about.html">Acerca de mi</a>
-                </li> 
-                <li>
-                    <a href="/pagesweb/blog/contact.html">Contacto</a>
-                </li>-->
-            </ul>
-        </div>
-        <div class="footer-icons">
-            <ul class="footer-social">
-                <li>
-                    <a href="malito:ricardovilallobos0990@gmail.com">
-                        <i class="fa fa-envelope-o"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/ricardovillalobos0990">
-                        <i class="fa fa-facebook"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/ricardovillalobos0990">
-                        <i class="fa fa-git"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer-rights">
-            <p>
-                <a href="https://ricardovillalobos0990.github.io/inteligencia_artificial201902/">Copyright &copy;
-                    2019</a>
-            </p>
-        </div>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="js/main.js"></script>
-
-</body>
-
+    <script src="./js/cv.js"></script>
+  </body>
 </html>
