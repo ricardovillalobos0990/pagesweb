@@ -80,6 +80,10 @@ html {
   height: 50px;
   overflow: hidden;
 }
+
+.navbar a {
+  margin-top: 4.5px;
+}
 .navbar img {
   height: 40px;
   width: auto;
@@ -299,7 +303,6 @@ html {
   background-color: rgba(0, 0, 0, 0.9);
   z-index: 1;
   animation-name: galeria-after;
-  animation-duration: 0.8s;
 }
 
 .footer {
