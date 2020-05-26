@@ -13,21 +13,7 @@
       "footer footer footer footer";
   }
 }
-@media only screen and (max-width: 1440px) {
-  /* PERFIL PROFESIONAL */
-  .profesional-container {
-    grid-template-areas:
-      "title-p description-p description-p description-p"
-      "description-c description-c description-c title-c"
-      "concentration concentration concentration concentration"
-      "precision image-c image-c  obedience"
-      "precision image-c image-c obedience"
-      ". experience experience ."
-      "support support infraestructure infraestructure "
-      "certifications certifications certifications certifications"
-      "footer footer footer footer";
-  }
-}
+
 @media only screen and (max-width: 1440px) {
   .profesional-container {
     grid-template-areas:
@@ -133,6 +119,9 @@
     padding-top: 10px;
     margin: 0 8%;
   }
+  .modal-container.active img {
+    width: 85%;
+  }
 }
 
 @media only screen and (max-width: 425px) {
@@ -151,9 +140,6 @@
   }
   .footer-wrapper {
     margin-top: 20px;
-  }
-  .modal-container.active img {
-    width: 90%;
   }
   .modal-container img {
     width: 90%;
