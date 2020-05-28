@@ -6,6 +6,30 @@ window.addEventListener("load", () => {
     document.getElementById("loader").className = "hide";
   }
 });
+// CREACION DE SOUGHNUT CHART JS
+const CHART = document.getElementById("myChart").getContext("2d");
+Chart.defaults.scale.ticks.beginAtZero = true;
+let barChart = new Chart(CHART, {
+  type: "pie",
+  data: {
+    labels: ["Concentracion", "Obediencia", "Precision"],
+    datasets: [
+      {
+        label: "Points",
+        backgroundColor: ["#02cd7c", "#013d73", "#0273c3"],
+        hoverBorderColor: "#aaeeff",
+        hoverBorderWidth: 3,
+        data: [33, 34, 33],
+      },
+    ],
+  },
+  options: {
+    animation: {
+      animateScale: true,
+    },
+    cutoutPercentage: 3,
+  },
+});
 // NAVEGACION MOBILE
 const menu = document.querySelector(".menu-toggle");
 const nav = document.querySelector(".nav");
@@ -179,7 +203,6 @@ var imagenes = [
     name: "animaciones-web.jpg",
     descripcion: "Animaciones Para la WEB - PLATZI",
   },
-  
 ];
 // MOSTRAR IMAGENES
 const galeria = document.getElementById("qualifications");
