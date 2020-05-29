@@ -30,6 +30,68 @@ let barChart = new Chart(CHART, {
     cutoutPercentage: 3,
   },
 });
+// RADAR EL EMPL
+const RADAR = document.getElementById("myRadar").getContext("2d");
+Chart.defaults.global.defaultFontFamily = "Lato";
+Chart.defaults.global.defaultFontSize = 15;
+let myRadarChart = new Chart(RADAR, {
+  type: "radar",
+  data: {
+    labels: [
+      "Responsabilidad",
+      "Autogestion",
+      "Liderazgo",
+      "Motivacion",
+      "Inteligencia Social",
+      "Autonomia",
+      "Arbitraje",
+      "Cooperacion",
+    ],
+    datasets: [
+      {
+        label: "Ricardo Villalobos",
+        backgroundColor: "transparent",
+        borderColor: "rgba(80, 247, 247, 0.5)",
+        fill: false,
+        radius: 6,
+        pointRadius: 6,
+        pointBorderWidth: 3,
+        pointBackgroundColor: "#80E5FF",
+        pointBorderColor: "rgba(0, 100, 100, 0.5)",
+        pointHoverRadius: 10,
+        data: [75, 71, 89, 57, 61, 25, 64, 64],
+      },
+    ],
+  },
+  option: {
+    scale: {
+      ticks: {
+        beginAtZero: true,
+        min: 0,
+        max: 100,
+        stepSize: 20,
+      },
+      pointLabels: {
+        fontSize: 18,
+      },
+    },
+  },
+  //Al pasar el cursor se mostrarán las etiquetas, pero no el valor de datos para el punto.
+  options: {
+    tooltips: {
+      callbacks: {
+        label: function (tooltipItem, data) {
+          return (
+            data.datasets[tooltipItem.datasetIndex].label +
+            ": " +
+            tooltipItem.yLabel
+          );
+        },
+      },
+    },
+  },
+});
+
 // NAVEGACION MOBILE
 const menu = document.querySelector(".menu-toggle");
 const nav = document.querySelector(".nav");
