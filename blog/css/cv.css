@@ -150,7 +150,7 @@ html {
   display: grid;
   grid-template-areas:
     "title-p description-p description-p description-p"
-    "image-r image-r image-r image-r"
+    ". image-r image-r ."
     "description-c description-c description-c title-c"
     "image-c image-c concentration concentration"
     "image-c image-c obedience obedience"
