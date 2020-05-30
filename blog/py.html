@@ -1,191 +1,277 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- DESCRIPCION DEL SITIO -->
-    <meta name="description" content="Blog Personal">
-    <meta name="author" content="Blog Ricardo Andres Villalobos Marulanda">
-    <meta name="keywords" content="Blog, Personal,CV,Hoja de vida">
-    <meta http-equiv="refresh" content="540">
+    <meta name="description" content="Blog Personal" />
+    <meta name="author" content="Blog Ricardo Andres Villalobos Marulanda" />
+    <meta name="keywords" content="Blog Personal, Proyectos" />
     <!-- GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap"
+      rel="stylesheet"
+    />
     <!-- BOOTSTRAP 4 -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
     <!-- FONT AWESOME-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"
-        integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"
+      integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M"
+      crossorigin="anonymous"
+    />
     <!-- SCROLL REVEAK -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css" />
     <link rel="icon" type="image/png" href="images/home/logo-p.jpg" />
     <title>Blog Personal - Proyectos</title>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!-- NAVIGATION -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <!-- CONTAINER -->
-        <div class="container">
-            <!-- LOGO DE NAVEGACION -->
-            <a class="navbar-brand" href="../blog/index.html">
-                <img src="images/home/logo.png" alt="" style="width: 17%;" class=" rounded-circle d-none d-sm-block">
-            </a>
-            <!-- BOTON CERRAR EN MODO TABLET -->
-            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="my-1 mx-2 close">X</span>
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- NAVEGACION PRINCIPAL -->
-            <div class="collapse navbar-collapse text-center" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html"> Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="cv.html" target="_blank">CV</a>
-                    </li>
-                    <li class="nav-item dropdown active">
-                        <a class="nav-link dropdown-toggle" href="py.html" data-toggle="dropdown">Proyectos</a>
-                        <div class="dropdown-menu bg-light">
-                            <a class="dropdown-item" href="py.html">MAIN</a>
-                            <a class="dropdown-item" href="py/dom.html">DOM</a>
-                            <a class="dropdown-item" href="py/request.html">REQUEST</a>
-                            <a class="dropdown-item" href="py/referred.html">REFERRED</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Acerca de mi</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link disabled" href="#">Contacto</a>
-                    </li>
-                </ul>
-            </div>
+      <!-- CONTAINER -->
+      <div class="container">
+        <!-- LOGO DE NAVEGACION -->
+        <a class="navbar-brand" href="../blog/index.html">
+          <img
+            src="images/home/logonav.png"
+            alt=""
+            style="width: 17%;"
+            class="rounded-circle d-none d-sm-block"
+          />
+        </a>
+        <!-- BOTON CERRAR EN MODO TABLET -->
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="my-1 mx-2 close">X</span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- NAVEGACION PRINCIPAL -->
+        <div class="collapse navbar-collapse text-center" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"> Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cv.html" target="_blank">CV</a>
+            </li>
+            <li class="nav-item dropdown active">
+              <a
+                class="nav-link dropdown-toggle"
+                href="py.html"
+                data-toggle="dropdown"
+                >Proyectos</a
+              >
+              <div class="dropdown-menu bg-light">
+                <a class="dropdown-item" href="py/dom.html">Manipulacion DOM</a>
+                <a class="dropdown-item" href="py/request.html"
+                  >Fetch - Ajax - API
+                </a>
+                <a class="dropdown-item" href="py/referred.html">Referidos</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Acerca de mi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Contacto</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
     <!-- INFO ONE -->
     <section id="info-one">
-        <div class="container">
-            <div class="row mt-5 align-items-center">
-                <div class="col-md-6 py-5">
-                    <!-- IMAGEN IZQUIERDA CON CLASES PARA REVEALS -->
-                    <div class="info-left">
-                        <img src="images/py/referidos.jpg" class="rounded" alt="Imagen 2" style="width: 100%"
-                            class="rounded img-fluid">
-                    </div>
-                </div>
-                <div class="col-md-6 my-auto pt-5">
-                    <!-- IMAGEN DERECHA CON CLASES PARA REVEALS -->
-                    <div class="info-right">
-                        <h2>Sistema referidos</h2>
-                        El presente proyecto consiste en desarrollar e implementar un aplicativo web para
-                        el manejo de datos de referidos en las campañas políticas, la principal característica de esta
-                        aplicación es la facilidad en el análisis de la información gracias a un sistema de centralizado
-                        y de capturas de datos en tiempo real, resolviendo así necesidades específicas de las
-                        campañas políticas.
-                        Se incluyen servicios como el registro de geolocalización en tiempo real, e informes
-                        detallados de toda la información obtenida
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row mt-5 align-items-center">
+          <div class="col-md-6 py-5">
+            <!-- IMAGEN IZQUIERDA CON CLASES PARA REVEALS -->
+            <div class="info-left">
+              <img
+                src="images/py/referidos.jpg"
+                class="rounded"
+                alt="Imagen 2"
+                style="width: 100%;"
+                class="rounded img-fluid"
+              />
             </div>
+          </div>
+          <div class="col-md-6 text-center">
+            <!-- IMAGEN DERECHA CON CLASES PARA REVEALS -->
+            <div class="info-right">
+              <h2 class="display-4">Sistema referidos</h2>
+              El presente proyecto consiste en desarrollar e implementar un
+              aplicativo web para el manejo de datos de referidos en las
+              campañas políticas, la principal característica de esta aplicación
+              es la facilidad en el análisis de la información gracias a un
+              sistema de centralizado y de capturas de datos en tiempo real,
+              resolviendo así necesidades específicas de las campañas políticas.
+              Se incluyen servicios como el registro de geolocalización en
+              tiempo real, e informes detallados de toda la información obtenida
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-    <!-- PROGESS -->
-    <div class="container" id="progress-sm">
-        <div class=" container-progress-sm">
-            <p class="mb-2">
-                Este proyecto se desarrollo con fines de aprendizaje
-                y desarrollo de proyecto de tecnologia
-                si desea descargarlo puede vistiar el siguiente enlace
-            </p>
-            <a href="py/referred.html" class="btn btn-outline-secondary">
-                Ver mas
-            </a>
-        </div>
+    <!-- BAR -->
+    <div class="container my-5" id="progress-sm">
+      <div class="container-progress-sm">
+        <p class="mb-2">
+          Este proyecto se desarrollo con fines de aprendizaje y desarrollo de
+          proyecto de tecnologia, si desea verlo puede vistiar el siguiente
+          enlace
+        </p>
+        <a href="py/referred.html" class="btn btn-outline-secondary">
+          Ver mas
+        </a>
+      </div>
     </div>
-    <!-- HEADER -->
-    <header class="mb-5" id="header">
-        <div class="container ">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <div class="header-content-left">
-                        <img src="images/py/dom.jpg" alt="Imagen #1" class="rounded-circle img-fluid">
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="header-content-right">
-                        <p class="h3">Manipulación</p>
-                        <h1 class="display-4"> DOM </h1>
-                        <p class="mt-5">
-                            El DOM permite un acceso a la estructura de una página HTML mediante el mapeo de los
-                            elementos
-                            de esta página en un árbol de nodos. Cada elemento se convierte en un nodo y cada porción de
-                            texto en un nodo de texto, Document Object Model es el conjunto de objetos que un programa
-                            de
-                            Javascript puede actuar sobre ellos.
-                        </p>
-                    </div>
-                </div>
+    <!-- INFO 2 -->
+    <section class="my-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="header-content-left">
+              <img
+                src="images/py/dom.jpg"
+                alt="Imagen #1"
+                class="rounded-circle img-fluid"
+              />
             </div>
+          </div>
+          <div class="col-md-6 text-center">
+            <div class="header-content-right">
+              <h1 class="display-4 my-5">Manipulación DOM</h1>
+              <p class="my-5">
+                El DOM permite un acceso a la estructura de una página HTML
+                mediante el mapeo de los elementos de esta página en un árbol de
+                nodos. Cada elemento se convierte en un nodo y cada porción de
+                texto en un nodo de texto, Document Object Model es el conjunto
+                de objetos que un programa de Javascript puede actuar sobre
+                ellos.
+              </p>
+            </div>
+          </div>
         </div>
-    </header>
-    <!-- PROGESS -->
-    <div class="container mb-5" id="progress-sm">
-        <div class=" container-progress-sm">
-            <p class="mb-2">
-                3 ejemplos practicos han sido realizar un programa para retirar
-                dinero de un cajero, El dibujo del canvas simulando un lapiz y
-                Mover con las teclas una imagen sobre un canvas.
-            </p>
-            <a href="../blog/py/dom.html" class="btn btn-outline-secondary">
-                Ver mas
-            </a>
-        </div>
+      </div>
+    </section>
+    <!-- BAR -->
+    <div class="container my-5" id="progress-sm">
+      <div class="container-progress-sm">
+        <p class="mb-2">
+          3 ejemplos practicos han sido realizar un programa para retirar dinero
+          de un cajero, El dibujo del canvas simulando un lapiz y Mover con las
+          teclas una imagen sobre un canvas.
+        </p>
+        <a href="../blog/py/dom.html" class="btn btn-outline-secondary">
+          Ver mas
+        </a>
+      </div>
     </div>
+    <!-- INFO 3 -->
+    <section class="my-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="header-content-left">
+              <img
+                src="images/py/api.jpg"
+                alt="Imagen #1"
+                class="rounded-circle img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-md-6 text-center">
+            <div class="header-content-right">
+              <h1 class="display-4 mt-5">API</h1>
+              <p class="my-5">
+                Una API es un conjunto de funciones y procedimientos que cumplen
+                una o muchas funciones con el fin de ser utilizadas por otro
+                software. En términos de programación, es una capa de
+                abstracción. Por ejemplo, digamos que estas desarrollando una
+                aplicación web y necesitas hacer peticiones HTTP. En lugar de
+                desarrollar todo el código para hacer una petición HTTP, puedes
+                utilizar una API que se encargue de esto, como por ejemplo
+                Requests Ahora, el término API ha evolucionado un poco con la
+                revolución de los servicios web que dieron a lugar lo que hoy se
+                conoce como API REST, o como muchos suelen llamarla, solo API.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- BAR -->
+    <div class="container mb-5" id="progress-sm">
+      <div class="container-progress-sm">
+        <p class="mb-2">
+          3 tipos de peticiones con <strong> FETCH y AJAX</strong> logrando
+          aplicarlo a bases de datos con MySql y finalmente creando una API
+        </p>
+        <a href="../blog/py/request.html" class="btn btn-outline-secondary">
+          Ver mas
+        </a>
+      </div>
+    </div>
+
     <!-- FOOTER -->
     <footer>
-        <div class="container text-center pt-4">
-            <div class="row">
-                <div class="col-md-4">
-                    <a href="ricardovillalobos0990@gmail.com">
-                        <i class="fas fa-envelope-open-text mt-4 h3"></i>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="https://www.facebook.com/ricardovillalobos0990">
-                        <i class="fab fa-facebook-f mt-4 h3"></i>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="https://github.com/ricardovillalobos0990" class="nav-link">
-                        <i class="fab fa-github-square mt-4 h3"></i>
-                    </a>
-                </div>
-                <hr />
-                <div class="col-md-12 mt-4">
-                    <p class="h4">Copyright &copy; 2019</p>
-                </div>
-            </div>
+      <div class="container text-center pt-4">
+        <div class="row">
+          <div class="col-md-4">
+            <a href="ricardovillalobos0990@gmail.com">
+              <i class="fas fa-envelope-open-text mt-4 h3"></i>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="https://www.twitter.com/rvillalobos0990" target="_blank">
+              <i class="fab fa-twitter mt-4 h3"></i>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="https://github.com/ricardovillalobos0990" class="nav-link">
+              <i class="fab fa-github-square mt-4 h3"></i>
+            </a>
+          </div>
+          <hr />
+          <div class="col-md-12 my-4">
+            <p class="h4" style="color: white;">Copyright &copy; 2020</p>
+          </div>
         </div>
+      </div>
     </footer>
     <!-- SCRIPTS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/reveal.js"></script>
-</body>
-
+  </body>
 </html>
