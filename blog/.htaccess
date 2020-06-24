@@ -1,4 +1,0 @@
-#Redirect from old domain to new domain
-RewriteEngine on
-RewriteBase /
-RewriteRule (.*) http://ricardovillalobos.works/$1 [R=301,L]
