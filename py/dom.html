@@ -1,206 +1,215 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- DESCRIPCION DEL SITIO -->
-    <meta name="description" content="Blog Personal">
-    <meta name="author" content="Blog Ricardo Andres Villalobos Marulanda">
-    <meta name="keywords" content="Blog, Personal,CV,Hoja de vida">
-    <meta http-equiv="refresh" content="540">
+    <meta name="description" content="Blog Personal" />
+    <meta name="author" content="Blog Ricardo Andres Villalobos Marulanda" />
+    <meta name="keywords" content="Blog, Personal,CV,Hoja de vida" />
+    <meta http-equiv="refresh" content="540" />
     <!-- GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet" />
     <!-- BOOTSTRAP 4 -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
     <!-- FONT AWESOME-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"
-        integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"
+      integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M"
+      crossorigin="anonymous"
+    />
     <!-- SCROLL REVEAK -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="../css/index.css">
-    <title>Blog Personal - DOM </title>
+    <link rel="stylesheet" href="../css/index.css" />
+    <title>Blog Personal - DOM</title>
     <link rel="icon" type="image/png" href="../images/home/logo-p.jpg" />
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- NAVIGATION -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="../">
-                <img src="../images/home/logonav.png" alt="" style="width: 17%;" class=" rounded-circle d-none d-sm-block">
-            </a>
-            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="my-1 mx-2 close">X</span>
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse text-center" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/"> Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../cv.html">CV</a>
-                    </li>
-                    <li class="nav-item dropdown active">
-                        <a class="nav-link dropdown-toggle" href="../py.html" data-toggle="dropdown">Proyectos</a>
-                        <div class="dropdown-menu bg-light">
-                            <a class="dropdown-item" href="../py.html">Proyectos</a>
-                            <a class="dropdown-item" href="request.html">Fetch - Ajax - API</a>
-                            <a class="dropdown-item" href="referred.html">Referidos<a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Acerca de mi</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link disabled" href="#">Contacto</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand" href="../">
+          <img src="../images/home/logonav.png" alt="" style="width: 17%;" class="rounded-circle d-none d-sm-block" />
+        </a>
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="my-1 mx-2 close">X</span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/"> Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../cv.html">CV</a>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="../py.html" data-toggle="dropdown">Proyectos</a>
+              <div class="dropdown-menu bg-light">
+                <a class="dropdown-item" href="../py.html">Proyectos</a>
+                <a class="dropdown-item" href="request.html">Fetch - Ajax - API</a>
+                <a class="dropdown-item" href="referred.html">Referidos</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="">Acerca de mi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="">Contacto</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
     <!-- HEADER -->
     <div class="container py-5" style="min-height: 468px;">
-        <div class="accordion pt-5" id="accordion-info-five">
-            <div class="card-info-five">
-                <div class="card-header" id="headingOne">
-                    <h2 class="mb-0">
-                        <button class="btn btn-info btn-lg" type="button" data-toggle="collapse"
-                            data-target="#collapseOne" aria-controls="collapseOne">
-                            Cajero
-                        </button>
-                    </h2>
-                </div>
-                <div id="collapseOne" class="collapse py-2" data-parent="#accordion-info-five">
-                    <div class="col-md-4">
-                        <img src="../images/py/cajero.gif" alt="Imagen #1" class="img-fluid">
-                    </div>
-                    <div class="col-md-4">
-                        <h4> Cajero Automatico</h4>
-                    </div>
-                    <div class="col-md-4">
-                        <input type="number" id="dinero" class="form-control">
-                    </div>
-                    <div class="col-md-4 py-4">
-                        <input type="button" value="Extraer" class="btn btn-primary btn-lg " id="extraer">
-                    </div>
-
-                    <div class="col-md-4">
-                        <p id="resultado"></p>
-                    </div>
-                    <div class="card-body">
-                        <hr>
-                        Se simula el retiro de dinero de un cajero, ingresando una cantidad el cajero le podra
-                        suministrar efectivo o no, tenga en cuenta que actualmente el cajero posee esta
-                        cantidad de dinero $.
-                        <br>
-                        <br>
-                        Cantidad de billetes de 100 mil es igual a 10 <br>
-                        Cantidad de billetes de 50 mil es igual a 20 <br>
-                        Cantidad de billetes de 20 mil es igual a 50 <br>
-                        Cantidad de billetes de 10 mil es igual a 100 <br>
-                        Cantidad de billetes de 5 mil es igual a 5 <br>
-                        <br>
-                        Al pulsar el boton extraer, el cajero enviara una notificacion indicando la cantidad
-                        de billetes retirados y su respectivo valor.
-                    </div>
-                </div>
+      <div class="accordion pt-5" id="accordion-info-five">
+        <div class="card-info-five">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-info btn-lg" type="button" data-toggle="collapse" data-target="#collapseOne" aria-controls="collapseOne">
+                Cajero
+              </button>
+            </h2>
+          </div>
+          <div id="collapseOne" class="collapse py-2" data-parent="#accordion-info-five">
+            <div class="col-md-4">
+              <img src="../images/py/cajero.gif" alt="Imagen #1" class="img-fluid" />
             </div>
-            <div class="card-info-five">
-                <div class="card-header" id="headingTwo">
-
-                    <h2 class="mb-0">
-                        <button class="btn btn-success btn-lg" type="button" data-toggle="collapse"
-                            data-target="#collapseTwo" aria-controls="collapseTwo">
-                            Villa Teclado
-                        </button>
-                    </h2>
-
-                </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-info-five">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <canvas width="400" height="300" id="recuadro" ;></canvas>
-                            </div>
-                            <div class="col-md-4">
-                                <p class="h1"> Mueve la vaca con las flechas del teclado</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-4">
+              <h4>Cajero Automatico</h4>
             </div>
-            <div class="card-info-five">
-                <div class="card-header" id="headingThree">
-                    <h2 class="mb-0">
-                        <button class="btn btn-danger btn-lg" type="button" data-toggle="collapse"
-                            data-target="#collapseThree" aria-controls="collapseThree">
-                            Dibuja con el Mouse
-                        </button>
-                    </h2>
-                </div>
-                <div id="collapseThree" class="collapse show" aria-labelledby="headingTwo"
-                    data-parent="#accordion-info-five">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <canvas width="300" height="300" id="papelito"></canvas>
-                            </div>
-                            <div class="col-md-8">
-                                <p class="h1"> Da clic sobre el rectangulo y mueve el mouse para dibujar</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-4">
+              <input type="number" id="dinero" class="form-control" />
             </div>
+            <div class="col-md-4 py-4">
+              <input type="button" value="Extraer" class="btn btn-primary btn-lg" id="extraer" />
+            </div>
+
+            <div class="col-md-4">
+              <p id="resultado"></p>
+            </div>
+            <div class="card-body">
+              <hr />
+              Se simula el retiro de dinero de un cajero, ingresando una cantidad el cajero le podra suministrar efectivo o no, tenga en cuenta que actualmente
+              el cajero posee esta cantidad de dinero $.
+              <br />
+              <br />
+              Cantidad de billetes de 100 mil es igual a 10 <br />
+              Cantidad de billetes de 50 mil es igual a 20 <br />
+              Cantidad de billetes de 20 mil es igual a 50 <br />
+              Cantidad de billetes de 10 mil es igual a 100 <br />
+              Cantidad de billetes de 5 mil es igual a 5 <br />
+              <br />
+              Al pulsar el boton extraer, el cajero enviara una notificacion indicando la cantidad de billetes retirados y su respectivo valor.
+            </div>
+          </div>
         </div>
-
+        <div class="card-info-five">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-success btn-lg" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-controls="collapseTwo">
+                Villa Teclado
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-info-five">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <canvas width="400" height="300" id="recuadro"></canvas>
+                </div>
+                <div class="col-md-4">
+                  <p class="h1">Mueve la vaca con las flechas del teclado</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-info-five">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-danger btn-lg" type="button" data-toggle="collapse" data-target="#collapseThree" aria-controls="collapseThree">
+                Dibuja con el Mouse
+              </button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion-info-five">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-4">
+                  <canvas width="300" height="300" id="papelito"></canvas>
+                </div>
+                <div class="col-md-8">
+                  <p class="h1">Da clic sobre el rectangulo y mueve el mouse para dibujar</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- FOOTER -->
     <footer>
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-md-4">
-                    <a href="ricardovillalobos0990@gmail.com">
-                        <i class="fas fa-envelope-open-text mt-4 h3"></i>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="https://www.twitter.com/rvillalobos0990" target="_blank">
-                        <i class="fab fa-twitter mt-4 h3"></i>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="https://github.com/ricardovillalobos0990" class="nav-link">
-                        <i class="fab fa-github-square mt-4 h3"></i>
-                    </a>
-                </div>
-                <hr />
-                <div class="col-md-12 my-4">
-                    <p class="h4" style="color: white;" >Copyright &copy; 2020</p>
-                </div>
-            </div>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-4">
+            <a href="ricardovillalobos0990@gmail.com">
+              <i class="fas fa-envelope-open-text mt-4 h3"></i>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="https://www.twitter.com/rvillalobos0990" target="_blank">
+              <i class="fab fa-twitter mt-4 h3"></i>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="https://github.com/ricardovillalobos0990" class="nav-link">
+              <i class="fab fa-github-square mt-4 h3"></i>
+            </a>
+          </div>
+          <hr />
+          <div class="col-md-12 my-4">
+            <p class="h4" style="color: white;">Copyright &copy; 2020</p>
+          </div>
         </div>
+      </div>
     </footer>
     <!-- SCRIPTS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
     <script src="../js/cajero.js"></script>
     <script src="../js/villa.js"></script>
     <script src="../js/mouse.js"></script>
-
-</body>
-
+  </body>
 </html>

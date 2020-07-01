@@ -33,7 +33,7 @@ sr.reveal(".card", {
     }
 });
 
-sr.reveal("#progress-sm, #progress-md", {
+sr.reveal(".progress-sm, .progress-md", {
     duration: 1000,
     origin: "left",
     distance: "100px",
