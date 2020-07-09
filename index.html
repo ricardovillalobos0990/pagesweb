@@ -8,7 +8,6 @@
     <meta name="description" content="Blog Personal" />
     <meta name="author" content="Blog Ricardo Andres Villalobos Marulanda" />
     <meta name="keywords" content="Blog, Personal,CV,Hoja de vida" />
-    <meta http-equiv="refresh" content="720" />
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet" />
     <!-- BOOTSTRAP 4 -->
@@ -25,9 +24,8 @@
       integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M"
       crossorigin="anonymous"
     />
-    <!-- SCROLL REVEAK -->
-    <script src="https://unpkg.com/scrollreveal"></script>
     <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="icon" type="image/png" href="images/home/logo-p.jpg" />
     <title>Blog Personal</title>
@@ -86,94 +84,76 @@
     <header id="header">
       <!-- CONTINER OF A ROW -->
       <div class="container mt-5">
-        <div class="row align-items-center pt-5">
-          <div class="col-md-6">
+        <div class="row align-items-center pt-2">
+          <div class="col-md-6 wow bounceIn">
             <div class="header-animation">
               <img src="images/home/logo.png" alt="Imagen #1" />
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="header-content-right">
-              <p class="h3">Hola soy</p>
-              <h1 class="display-4">Ricardo Villalobos</h1>
-              <p class="description">
-                Alguien como tú que aprende todos los días algo nuevo gracias a la web, en este contenido mostrare algunas páginas las cuales me ayudaron a
-                adquirir las bases para mi desarrollo., espero que si estas iniciando por la programación WEB visites estos sitios, practiques y obtengas buenos
-                resultados.
-              </p>
-            </div>
+          <div class="col-md-6 wow fadeIn">
+            <p class="h3 pt-4">Hola soy</p>
+            <h1 class="display-4">Ricardo Villalobos</h1>
+            <p class="description">
+              Alguien como tú que aprende todos los días algo nuevo gracias a la web, en este contenido mostrare algunas páginas las cuales me ayudaron a
+              adquirir las bases para mi desarrollo., espero que si estas iniciando por la programación WEB visites estos sitios, practiques y obtengas buenos
+              resultados.
+            </p>
           </div>
         </div>
       </div>
     </header>
-    <!-- PROGESS -->
-    <div class="container progress-sm">
-      <div class="container-progress-sm">
-        <p class="bar">
-          Contare un poco sobre como inicie mi carrera en el desarrollo WEB y como ha sido mi ruta de aprendizaje a través de retos cada vez más ambiciosos los
-          cuales podrás ver al ir navegando por este sitio...
-        </p>
-        <!-- <a href="py.html" class="btn btn-outline-secondary btn-lg mt-2 testimonial-btn"> Leer mas ... </a> -->
-      </div>
+    <div class="container progress-sm wow fadeIn">
+      <p class="bar">
+        Contare un poco sobre como inicie mi carrera en el desarrollo WEB y como ha sido mi ruta de aprendizaje a través de retos cada vez más ambiciosos los
+        cuales podrás ver al ir navegando por este sitio...
+      </p>
     </div>
-    <!-- INFO ONE -->
-    <section id="info-one">
+    <section class="wow fadeInUp">
       <div class="container">
         <div class="row mt-5 align-items-center">
           <div class="col-md-6">
-            <!-- IMAGEN IZQUIERDA CON CLASES PARA REVEALS -->
-            <div class="info-left">
-              <img src="images/home/languajes.jpg" alt="lenguaje" style="width: 100%;" class="rounded img-fluid" />
-            </div>
+            <img src="images/home/languajes.jpg" alt="lenguaje" style="width: 100%;" class="rounded img-fluid" />
           </div>
           <div class="col-md-6 my-auto">
-            <!-- IMAGEN DERECHA CON CLASES PARA REVEALS -->
-            <div class="info-right">
-              <h2 class="display-4">Html, Css y Javascript</h2>
-              <p class="description">
-                Después de ver tutoriales sobre como iniciar mi carrera profesional en el desarrollo web decidi iniciar aprendiendo sobre estos tres lenguajes.
-                <br />
-                <br />
-                Ya no me sorprende entrar al inspector de elementos y cambiar o verificar codigo de estilo, encontrar errores en la consola. Ahora estos se
-                vuelve la mejor herrmienta.
-              </p>
-            </div>
+            <h2 class="display-4">Html, Css y Javascript</h2>
+            <p class="description">
+              Después de ver tutoriales sobre como iniciar mi carrera profesional en el desarrollo web decidi iniciar aprendiendo sobre estos tres lenguajes.
+              <br />
+              <br />
+              Ya no me sorprende entrar al inspector de elementos y cambiar o verificar codigo de estilo, encontrar errores en la consola. Ahora estos se vuelve
+              la mejor herrmienta.
+            </p>
           </div>
         </div>
       </div>
     </section>
-    <!-- INFO THREE -->
-    <section id="info-three">
+    <section class="wow fadeInUp">
       <!-- CONTAINER -->
       <div class="container">
         <div class="row mt-5 align-items-center">
           <div class="col-md-6 my-auto">
-            <div class="info-left">
-              <h2 class="display-4">Jquery, Scrollreveal, Bootstrap 4, Php, Mysql</h2>
-              <p class="description">
-                Se continia adquiriendo conocimiento en estas tecnologías utilizando librerías y framework los cuales permiten simplificar la tarea de
-                programar, esto ya después de unos meses de practica cuando tome algo de experiencia en escribir código para la web con los 3 lenguajes
-                esenciales HTML, Css y JavaScript...
-                <br />
-                <br />
-                JQuery, Scrollreveal y Bootstrap permiten crear interfaces web que se adapta a los tamaños de dispositivo, manipular el DOM y realizar
-                animaciones. En este aprendizaje me encontré con la pregunta de cómo interactúa un sitio web con una base de datos relacional como MySQL y para
-                esto se debe tener un lenguaje al lado del servidor como php esta fue la elección., por que viendo un ejemplo encontre que en HTML se lograba
-                introducir código de manera fácil y la importación de aprender más sobre metodos <strong> GET - POST - AJAX - FETCH </strong> y objetos
-                <strong> JSON </strong>.
-              </p>
-            </div>
+            <h2 class="display-4">Jquery, WOW, Bootstrap 4, Php, Mysql</h2>
+            <p class="description">
+              Se continia adquiriendo conocimiento en estas tecnologías utilizando librerías y framework los cuales permiten simplificar la tarea de programar,
+              esto ya después de unos meses de practica cuando tome algo de experiencia en escribir código para la web con los 3 lenguajes esenciales HTML, Css
+              y JavaScript...
+              <br />
+              <br />
+              JQuery, Scrollreveal y Bootstrap permiten crear interfaces web que se adapta a los tamaños de dispositivo, manipular el DOM y realizar
+              animaciones. En este aprendizaje me encontré con la pregunta de cómo interactúa un sitio web con una base de datos relacional como MySQL y para
+              esto se debe tener un lenguaje al lado del servidor como php esta fue la elección., por que viendo un ejemplo encontre que en HTML se lograba
+              introducir código de manera fácil y la importación de aprender más sobre metodos <strong> GET - POST - AJAX - FETCH </strong> y objetos
+              <strong> JSON </strong>.
+            </p>
           </div>
           <div class="col-md-6">
-            <div class="info-right">
-              <img src="images/home/languajes-1.png" alt="Tecnologias" style="width: 100%;" class="rounded img-fluid" />
-            </div>
+            <img src="images/home/languajes-1.png" alt="Tecnologias" style="width: 100%;" class="rounded img-fluid" />
           </div>
         </div>
       </div>
     </section>
     <!-- PROGRESS -->
-    <div class="container mt-5" id="progress-md">
+    <div class="container progress-sm mt-5 wow fadeIn">
       <div class="container-progress-md">
         <p class="bar">
           Contando ya con unos meses de escribir código probé el framework de Bootstrap en la versión 4.4.1 y una biblioteca de javascript como scrollreveal,
@@ -182,19 +162,15 @@
         </p>
       </div>
     </div>
-    <!-- INFO FOUR -->
-    <div class="info-four">
-      <!-- 
-        CONTAINER TODAS LAS IMAGENES TIENE EL MISMO TAMAÑO Y UN PESO<100KB
-         -->
+    <div class="wow fadeIn">
       <div class="container">
         <!-- UNA FILA CON DOS COLUMNAS MARGEN Y ALINEADAS -->
         <div class="row my-5">
           <div class="col-md-6 align-items-center">
-            <div>
+            <div class="wow flipInY">
               <img src="images/home/node-js.png" alt="node-js" style="width: 80%;" class="fluid" />
             </div>
-            <div class="info-four-left">
+            <div class="wow fadeIn">
               Viendo videos de cómo funciona lo probé con Arduino y no me decepciono utilizando un framework llamado express se logra controlar hardware a
               través de la web
               <br />
@@ -204,10 +180,10 @@
             </div>
           </div>
           <div class="col-md-6">
-            <div>
+            <div class="wow flipInY">
               <img src="images/home/webpack.png" alt="Web Pack" style="width: 100%;" />
             </div>
-            <div class="info-four-right">
+            <div class="wow fadeIn">
               Me encuentro muy emocionado al estar aprendiendo cómo funciona la estructuración de los archivos y me causo gran curiosidad los archivos con
               extensión .min están escritos en línea y muchas más cosas de manera que hay formas de optimizar nuestras paginas con buenas prácticas.
               <br />
@@ -219,37 +195,33 @@
         </div>
       </div>
     </div>
-    <!-- INFO FIVE -->
-    <div class="container p-4">
-      <!-- UN ACORDEON FORMADO POR DOS FILAS Y SUS CLASES PARA DAR EFECTOS CON REVEALS JS -->
+    <div class="container p-4 wow flipInX">
       <div class="accordion" id="accordion-info-five">
-        <div class="card-info-five">
-          <div class="card-header" id="headingOne">
-            <h2 class="mb-0">
-              <button class="btn btn-outline-info btn-lg" type="button" data-toggle="collapse" data-target="#collapseOne" aria-controls="collapseOne">
-                React.js
-              </button>
-            </h2>
-          </div>
-          <div id="collapseOne" class="collapse" data-parent="#accordion-info-five">
-            <div class="card-body">
-              En mayo del año 2020 tome el curso de en React.js, al principio me ha costado adaptarme al manejo de las propiedades (props) y el ciclo de vida de
-              los componentes., pero ya veo los nuevos proyectos a realizar con esta tecnologia la cual es muy popular.
-              <br />
-              <hr />
-              <strong>Prerrequisitos</strong>
-              Asumimos que tienes cierta familiaridad con HTML y JavaScript, pero deberías ser capaz de seguir adelante incluso si vienes de un lenguaje de
-              programación diferente. También suponemos que estás familiarizado con conceptos de programación como funciones, objetos, arrays, y en menor
-              medida, clases. Si necesitas revisar JavaScript, te recomendamos leer esta guía. Ten en cuenta que también usamos algunas características de ES6,
-              una versión reciente de JavaScript. En este tutorial, estamos usando funciones flecha, clases, sentencias let y const. Puedes usar el Babel REPL
-              para revisar a qué código compila ES6
-            </div>
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <button class="btn btn-info btn-lg" type="button" data-toggle="collapse" data-target="#collapseOne" aria-controls="collapseOne">
+              React.js
+            </button>
+          </h2>
+        </div>
+        <div id="collapseOne" class="collapse" data-parent="#accordion-info-five">
+          <div class="card-body">
+            En mayo del año 2020 tome el curso de en React.js, al principio me ha costado adaptarme al manejo de las propiedades (props) y el ciclo de vida de
+            los componentes., pero ya veo los nuevos proyectos a realizar con esta tecnologia la cual es muy popular.
+            <br />
+            <hr />
+            <strong>Prerrequisitos</strong>
+            Asumimos que tienes cierta familiaridad con HTML y JavaScript, pero deberías ser capaz de seguir adelante incluso si vienes de un lenguaje de
+            programación diferente. También suponemos que estás familiarizado con conceptos de programación como funciones, objetos, arrays, y en menor medida,
+            clases. Si necesitas revisar JavaScript, te recomendamos leer esta guía. Ten en cuenta que también usamos algunas características de ES6, una
+            versión reciente de JavaScript. En este tutorial, estamos usando funciones flecha, clases, sentencias let y const. Puedes usar el Babel REPL para
+            revisar a qué código compila ES6
           </div>
         </div>
-        <div class="card-info-five">
+        <div>
           <div class="card-header" id="headingTwo">
             <h2 class="mb-0">
-              <button class="btn btn-outline-success btn-lg" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-controls="collapseTwo">
+              <button class="btn btn-success btn-lg" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-controls="collapseTwo">
                 Redux
               </button>
             </h2>
@@ -264,60 +236,53 @@
             </div>
           </div>
         </div>
-        <div class="card-info-five">
-          <div class="card-header" id="headingThree">
-            <h2 class="mb-0">
-              <button
-                class="btn btn-outline-primary btn-lg"
-                type="button"
-                data-toggle="collapse"
-                data-target="#collapseThree"
-                aria-expanded="false"
-                aria-controls="collapseThree"
-              >
-                React Router
-              </button>
-            </h2>
-          </div>
-          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion-info-five">
-            <div class="card-body">
-              Para finalizar Router DOM es de manera alguna la forma de mostrar las rutas de las apps de forma dinamica usando la tecnología Server Side Render
-              (SSR) y olvídate de refrescar el sitio cada vez que cambias de ruta. <strong>single pages applications</strong> esto tiene un gran rendimiento
-              dentro de las aplicaciones.
-            </div>
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+            <button
+              class="btn btn-secondary btn-lg"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              React Router
+            </button>
+          </h2>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion-info-five">
+          <div class="card-body">
+            Para finalizar Router DOM es de manera alguna la forma de mostrar las rutas de las apps de forma dinamica usando la tecnología Server Side Render
+            (SSR) y olvídate de refrescar el sitio cada vez que cambias de ruta. <strong>single pages applications</strong> esto tiene un gran rendimiento
+            dentro de las aplicaciones.
           </div>
         </div>
       </div>
     </div>
-    <!-- INFO TWO -->
-    <div class="info-two">
-      <div class="container">
-        <div class="row my-5">
-          <div class="col-md-6">
-            <!-- IMAGEN IZQUIERDA CON CLASES PARA REVEALS -->
-            <div class="info-two-left">
-              <h2 class="display-4">Plataformas Gratuitas</h2>
-              <p class="description">
-                Ha sido practico leer un libro con la teoría de un lenguaje la cual es esencial, si no ver videos con ejemplos prácticos de personas que
-                comparten el conocimiento de lo aprendido mediante videos en YouTube las cuales están hoy en día al alcance de muchas personas... <br />
-                <br />
-                Aunque el contenido es bueno se debe tener cuidado y saber buscar que quieres aprender ya que no se debe dejar llevar por otros temas. Es mejor
-                ir estructurando la información de lo que se quiere aprender, ya en ocasiones se suele salir de la ruta de aprendizaje...
-              </p>
-            </div>
+    <div class="container wow fadeIn">
+      <div class="row my-5">
+        <div class="col-md-6">
+          <div>
+            <h2 class="display-4">Plataformas Gratuitas</h2>
+            <p class="description">
+              Ha sido practico leer un libro con la teoría de un lenguaje la cual es esencial, si no ver videos con ejemplos prácticos de personas que comparten
+              el conocimiento de lo aprendido mediante videos en YouTube las cuales están hoy en día al alcance de muchas personas... <br />
+              <br />
+              Aunque el contenido es bueno se debe tener cuidado y saber buscar que quieres aprender ya que no se debe dejar llevar por otros temas. Es mejor ir
+              estructurando la información de lo que se quiere aprender, ya en ocasiones se suele salir de la ruta de aprendizaje...
+            </p>
           </div>
-          <div class="col-md-6">
-            <!-- IMAGEN DERECHA CON CLASES PARA REVEALS -->
-            <div class="info-two-right">
-              <h2 class="display-4">Plataformas de pago</h2>
-              <p class="description">
-                Es un hecho que las plataformas de pago te dan la información de manera estructurada y profesional., ya que como se podrán dar cuenta muchos de
-                los cursos gratuitos te enviaran a su versión premium y es de tu elección invertir en la formación la cual te llevará por un camino más corto.
-                <br /><br />
-                Aunque solo he pagado un curso en Udemy sobre Windows Server 2016 el cual requería para adquirir conocimientos que me ayudaran en mi puesto de
-                trabajo no me arrepiento. Tampoco me arrepiento de seguir consumiendo contenido gratuito y seguir leyendo la documentación.
-              </p>
-            </div>
+        </div>
+        <div class="col-md-6">
+          <div class="">
+            <h2 class="display-4">Plataformas de pago</h2>
+            <p class="description">
+              Es un hecho que las plataformas de pago te dan la información de manera estructurada y profesional., ya que como se podrán dar cuenta muchos de
+              los cursos gratuitos te enviaran a su versión premium y es de tu elección invertir en la formación la cual te llevará por un camino más corto.
+              <br /><br />
+              Aunque solo he pagado un curso en Udemy sobre Windows Server 2016 el cual requería para adquirir conocimientos que me ayudaran en mi puesto de
+              trabajo no me arrepiento. Tampoco me arrepiento de seguir consumiendo contenido gratuito y seguir leyendo la documentación.
+            </p>
           </div>
         </div>
       </div>
@@ -326,7 +291,7 @@
     <div class="container">
       <!-- DOS FILAS CON CONFIGURACIONES EN LOS DISTINTOS TAMAÑOS DE PANTALLA -->
       <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
-        <div class="col mb-4">
+        <div class="col mb-4 wow bounceInUp">
           <div class="card">
             <img src="./images/home/fazt.jpg" class="card-img-top rounded" alt="logo-fazt" />
             <div class="card-body">
@@ -346,7 +311,7 @@
             </div>
           </div>
         </div>
-        <div class="col mb-4">
+        <div class="col mb-4 wow bounceInUp">
           <div class="card align-items-center">
             <img src="images/home/blueweb.jpg" class="card-img-top rounded" alt="logo-bluuweb" />
             <div class="card-body">
@@ -364,7 +329,7 @@
             </div>
           </div>
         </div>
-        <div class="col mb-4">
+        <div class="col mb-4 wow bounceInUp">
           <div class="card">
             <img src="images/home/cctmexico.jpg" class="card-img-top rounded" alt="logo-cctmexico" />
             <div class="card-body">
@@ -383,7 +348,7 @@
             </div>
           </div>
         </div>
-        <div class="col mb-4">
+        <div class="col mb-4 wow bounceInUp">
           <div class="card">
             <img src="images/home/edteam.jpg" class="card-img-top rounded" alt="logo-edteam" />
             <div class="card-body">
@@ -402,7 +367,7 @@
             </div>
           </div>
         </div>
-        <div class="col mb-4">
+        <div class="col mb-4 wow bounceInUp">
           <div class="card">
             <img src="images/home/platzi.jpg" class="card-img-top rounded" alt="logo-platzi" />
             <div class="card-body">
@@ -419,7 +384,7 @@
             </div>
           </div>
         </div>
-        <div class="col mb-4">
+        <div class="col mb-4 wow bounceInUp">
           <div class="card">
             <img src="images/home/udemy.jpg" class="card-img-top rounded" alt="logo-udemy" />
             <div class="card-body">
@@ -435,7 +400,7 @@
             </div>
           </div>
         </div>
-        <div class="col mb-4">
+        <div class="col mb-4 wow bounceInUp">
           <div class="card">
             <img src="images/home/pildorasinformaticas.jpeg" class="card-img-top rounded" alt="logo-udemy" />
             <div class="card-body">
@@ -479,10 +444,15 @@
         </div>
       </div>
     </footer>
-    <span href="" class="upbtn" id="upbtn">
+    <span class="upbtn" id="upbtn">
       <i class="fas fa-chevron-up"></i>
     </span>
     <!-- SCRIPTS -->
+    <script src="./js/index.js"></script>
+    <script src="./js/wow.js"></script>
+    <script>
+      new WOW().init();
+    </script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -498,6 +468,5 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
-    <script src="js/reveal.js"></script>
   </body>
 </html>

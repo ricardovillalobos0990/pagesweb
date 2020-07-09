@@ -14,9 +14,7 @@ header {
 .navbar-toggler:not(.collapsed) > .navbar-toggler-icon {
   display: none;
 }
-.nav-link {
-  font-weight: bold;
-}
+
 .progress-sm,
 #progress-md {
   background: #232526; /* fallback for old browsers */
@@ -43,7 +41,7 @@ footer div a:hover {
   margin-top: 3rem;
 }
 .upbtn {
-  
+  display: none;
   position: fixed;
   width: 48px;
   height: 48px;
