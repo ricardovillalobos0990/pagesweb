@@ -68,14 +68,3 @@ sr.reveal(".card-info-five", {
   interval: 16,
   reset: true,
 });
-
-//SMOTH SCROLLING
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-
-    document.querySelector(this.getAttribute("href")).scrollIntoView({
-      behavior: "smooth",
-    });
-  });
-});
