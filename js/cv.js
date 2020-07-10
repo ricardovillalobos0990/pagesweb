@@ -37,22 +37,13 @@ Chart.defaults.global.defaultFontSize = 15;
 let myRadarChart = new Chart(RADAR, {
   type: "radar",
   data: {
-    labels: [
-      "Responsabilidad",
-      "Autogestion",
-      "Liderazgo",
-      "Motivacion",
-      "Inteligencia Social",
-      "Autonomia",
-      "Arbitraje",
-      "Cooperacion",
-    ],
+    labels: ["Responsabilidad", "Autogestion", "Liderazgo", "Motivacion", "Inteligencia Social", "Autonomia", "Arbitraje", "Cooperacion"],
     datasets: [
       {
-        label: "Ricardo Villalobos",
+        label: "Ricardo Andres Villalobos Marulanda",
         backgroundColor: "transparent",
         borderColor: "rgba(80, 247, 247, 0.5)",
-        fill: false,
+        fill: true,
         radius: 6,
         pointRadius: 6,
         pointBorderWidth: 3,
@@ -63,30 +54,36 @@ let myRadarChart = new Chart(RADAR, {
       },
     ],
   },
-  option: {
-    scale: {
-      ticks: {
-        beginAtZero: true,
-        min: 0,
-        max: 100,
-        stepSize: 20,
-      },
-      pointLabels: {
-        fontSize: 18,
-      },
-    },
-  },
   //Al pasar el cursor se mostrarán las etiquetas, pero no el valor de datos para el punto.
   options: {
     tooltips: {
       callbacks: {
         label: function (tooltipItem, data) {
-          return (
-            data.datasets[tooltipItem.datasetIndex].label +
-            ": " +
-            tooltipItem.yLabel
-          );
+          return data.datasets[tooltipItem.datasetIndex].label + ": " + tooltipItem.yLabel;
         },
+      },
+    },
+    title: {
+      display: true,
+      text: "Competencias Laborales",
+    },
+    scale: {
+      angleLines: {
+        display: false,
+      },
+      ticks: {
+        suggestedMin: 0,
+        suggestedMax: 100,
+        stepSize: 10,
+      },
+      pointLabels: {
+        fontSize: 16,
+      },
+    },
+    legend: {
+      display: true,
+      labels: {
+        fontColor: "rgb(0, 0, 0)",
       },
     },
   },
