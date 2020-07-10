@@ -99,7 +99,9 @@
   .description {
     text-align: center;
   }
-
+  .profesional-title {
+    margin-top: 100px;
+  }
   .profesional-container {
     display: grid;
     grid-template-areas:
@@ -135,9 +137,6 @@
 
   .description {
     font-size: 0.9rem;
-  }
-  .profesional-title {
-    margin-top: 50px;
   }
   .description {
     text-align: left;
